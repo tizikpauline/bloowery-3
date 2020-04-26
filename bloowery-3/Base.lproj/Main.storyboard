@@ -213,7 +213,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JDd-7l-0e8">
-                                <rect key="frame" x="0.0" y="84" width="414" height="729"/>
+                                <rect key="frame" x="0.0" y="84" width="414" height="812"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uHh-l8-rSZ">
                                         <rect key="frame" x="20" y="30" width="374" height="666"/>
@@ -243,8 +243,8 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstItem="uHh-l8-rSZ" firstAttribute="top" secondItem="JDd-7l-0e8" secondAttribute="top" constant="30" id="hNu-vS-zKr"/>
                                     <constraint firstAttribute="trailing" secondItem="uHh-l8-rSZ" secondAttribute="trailing" constant="20" id="nrA-kl-s1g"/>
+                                    <constraint firstAttribute="bottom" secondItem="uHh-l8-rSZ" secondAttribute="bottom" constant="116" id="o79-zl-hWQ"/>
                                     <constraint firstItem="uHh-l8-rSZ" firstAttribute="leading" secondItem="JDd-7l-0e8" secondAttribute="leading" constant="20" id="w5v-aL-WsT"/>
                                 </constraints>
                             </view>
@@ -254,22 +254,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o90-fi-eHU">
-                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="clG-Of-FIW">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Item" image="Today-Active" id="hPt-dT-lNw">
+                                    <barButtonItem title="Item" image="Today-Active" id="xCW-y1-Bkh">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <segue destination="2v5-Ye-jUG" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="hOR-5D-8Zz"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="txu-fF-Xgd"/>
+                                    <barButtonItem title="My Plants" image="Plants-Inactive" id="WX2-9H-tOg">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <segue destination="YSJ-WO-KdV" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="bCN-iS-5FQ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="zVt-71-xHs"/>
+                                    <barButtonItem title="Item" image="Diagnostics-Inactive" id="5tJ-vY-uGe">
                                         <color key="tintColor" red="0.16862745100000001" green="0.87450980389999999" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="wMZ-wD-Xt5"/>
-                                    <barButtonItem title="My Plants" image="Plants-Inactive" id="8Ae-Ku-IID">
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="bDz-db-hHC"/>
-                                    <barButtonItem title="Item" image="Diagnostics-Inactive" id="MMq-dh-uLW">
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="p8k-Pa-1cc"/>
-                                    <barButtonItem title="Item" image="Profile-Inactive" id="4bO-xi-WPV">
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="9Rd-QF-bh6"/>
+                                    <barButtonItem title="Item" image="Profile-Inactive" id="cm9-La-ldc">
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </barButtonItem>
                                 </items>
@@ -279,15 +286,11 @@
                         <color key="backgroundColor" red="0.96862745100000003" green="0.97647058819999999" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="JDd-7l-0e8" firstAttribute="trailing" secondItem="xog-sf-O1d" secondAttribute="trailing" id="3Cu-vE-gMj"/>
-                            <constraint firstItem="o90-fi-eHU" firstAttribute="bottom" secondItem="xog-sf-O1d" secondAttribute="bottom" id="7af-rz-mRK"/>
                             <constraint firstItem="Lhm-Hm-nI3" firstAttribute="centerX" secondItem="098-WY-vLt" secondAttribute="centerX" id="99y-sh-DGx"/>
-                            <constraint firstItem="o90-fi-eHU" firstAttribute="trailing" secondItem="xog-sf-O1d" secondAttribute="trailing" id="CXu-PJ-atF"/>
                             <constraint firstItem="JDd-7l-0e8" firstAttribute="leading" secondItem="xog-sf-O1d" secondAttribute="leading" id="CdV-64-tpA"/>
-                            <constraint firstItem="o90-fi-eHU" firstAttribute="top" secondItem="JDd-7l-0e8" secondAttribute="bottom" id="KMb-eC-qIa"/>
-                            <constraint firstItem="o90-fi-eHU" firstAttribute="top" secondItem="JDd-7l-0e8" secondAttribute="bottom" id="Poc-wL-LMM"/>
                             <constraint firstItem="Lhm-Hm-nI3" firstAttribute="top" secondItem="xog-sf-O1d" secondAttribute="top" id="hij-dB-5ar"/>
                             <constraint firstItem="JDd-7l-0e8" firstAttribute="top" secondItem="Lhm-Hm-nI3" secondAttribute="bottom" constant="18" id="n5R-MR-yTv"/>
-                            <constraint firstItem="o90-fi-eHU" firstAttribute="leading" secondItem="xog-sf-O1d" secondAttribute="leading" id="yd1-3F-6ag"/>
+                            <constraint firstAttribute="bottom" secondItem="JDd-7l-0e8" secondAttribute="bottom" id="nRJ-Vv-6po"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xog-sf-O1d"/>
                     </view>
@@ -300,7 +303,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xY5-Fm-k2W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2669.5652173913045" y="813.61607142857144"/>
+            <point key="canvasLocation" x="2469.5652173913045" y="813.61607142857144"/>
         </scene>
         <!--Chat View Controller-->
         <scene sceneID="w2i-d5-G9E">
@@ -325,108 +328,120 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N1j-Oz-Kga">
-                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem title="Item" image="Today-Inactive" id="bkW-Hp-vVY">
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <connections>
-                                            <segue destination="2v5-Ye-jUG" kind="presentation" modalPresentationStyle="fullScreen" id="hVI-m8-M9H"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Z8Z-Mu-9Du"/>
-                                    <barButtonItem title="Item" image="Plants-Inactive" id="sx6-l7-Woi">
-                                        <color key="tintColor" red="0.16862745100000001" green="0.87450980389999999" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="eNl-OZ-byH"/>
-                                    <barButtonItem title="Item" image="Diagnostics-Inactive" id="FOf-Yb-OI5">
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <connections>
-                                            <segue destination="YWz-T2-J19" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="ySz-ix-Gue"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="DDa-0b-RpB"/>
-                                    <barButtonItem title="Item" image="Profile-Inactive" id="ZGD-uq-YUC">
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </barButtonItem>
-                                </items>
-                                <color key="barTintColor" red="0.96862745100000003" green="0.97647058819999999" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
-                            </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мои растения" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Pq-oh-JD5">
                                 <rect key="frame" x="147.5" y="44" width="119" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <searchBar contentMode="redraw" placeholderIntrinsicWidth="329" placeholderIntrinsicHeight="35" searchBarStyle="minimal" placeholder="Поиск" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYD-xx-Gqv">
-                                <rect key="frame" x="20" y="99" width="329" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="NUt-eo-bDs"/>
-                                </constraints>
-                                <color key="barTintColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <offsetWrapper key="searchFieldBackgroundPositionAdjustment" horizontal="0.0" vertical="0.0"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <scopeButtonTitles>
-                                    <string>Title</string>
-                                </scopeButtonTitles>
-                                <connections>
-                                    <outlet property="delegate" destination="YSJ-WO-KdV" id="bdZ-Sd-hCz"/>
-                                </connections>
-                            </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wh9-eb-V9s">
-                                <rect key="frame" x="361" y="99" width="33" height="33"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="33" id="UrE-gt-0b0"/>
-                                    <constraint firstAttribute="height" constant="33" id="xdm-0t-xTG"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="Add Plant"/>
-                                <connections>
-                                    <action selector="addPlantButton:" destination="YSJ-WO-KdV" eventType="touchUpInside" id="Xxk-7v-rFw"/>
-                                </connections>
-                            </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="d74-2n-XHX">
-                                <rect key="frame" x="20" y="149" width="374" height="666"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hx-Vr-MzP">
+                                <rect key="frame" x="0.0" y="84" width="414" height="812"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="d74-2n-XHX">
+                                        <rect key="frame" x="20" y="65" width="374" height="662"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="662" id="Bha-aQ-2gY"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="smT-2M-57u">
+                                            <size key="itemSize" width="114" height="107"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlantCollectionViewCell" id="UUy-F1-1sb">
+                                                <rect key="frame" x="0.0" y="0.0" width="114" height="107"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bz2-kf-pY4">
+                                                    <rect key="frame" x="0.0" y="0.0" width="114" height="107"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </collectionViewCellContentView>
+                                                <size key="customSize" width="114" height="107"/>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                    <searchBar contentMode="redraw" placeholderIntrinsicWidth="329" placeholderIntrinsicHeight="35" searchBarStyle="minimal" placeholder="Поиск" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYD-xx-Gqv">
+                                        <rect key="frame" x="20" y="15" width="329" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="NUt-eo-bDs"/>
+                                        </constraints>
+                                        <color key="barTintColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <offsetWrapper key="searchFieldBackgroundPositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <scopeButtonTitles>
+                                            <string>Title</string>
+                                        </scopeButtonTitles>
+                                        <connections>
+                                            <outlet property="delegate" destination="YSJ-WO-KdV" id="bdZ-Sd-hCz"/>
+                                        </connections>
+                                    </searchBar>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wh9-eb-V9s">
+                                        <rect key="frame" x="361" y="15" width="33" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="33" id="UrE-gt-0b0"/>
+                                            <constraint firstAttribute="height" constant="33" id="xdm-0t-xTG"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="Add Plant"/>
+                                        <connections>
+                                            <action selector="addPlantButton:" destination="YSJ-WO-KdV" eventType="touchUpInside" id="Xxk-7v-rFw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="666" id="8kN-tt-cyM"/>
+                                    <constraint firstItem="WYD-xx-Gqv" firstAttribute="top" secondItem="6hx-Vr-MzP" secondAttribute="top" constant="15" id="1Pz-qm-BHG"/>
+                                    <constraint firstItem="d74-2n-XHX" firstAttribute="leading" secondItem="6hx-Vr-MzP" secondAttribute="leading" constant="20" id="3D7-AY-Eoi"/>
+                                    <constraint firstItem="d74-2n-XHX" firstAttribute="top" secondItem="WYD-xx-Gqv" secondAttribute="bottom" constant="15" id="Ei8-IH-61b"/>
+                                    <constraint firstItem="Wh9-eb-V9s" firstAttribute="top" secondItem="6hx-Vr-MzP" secondAttribute="top" constant="15" id="FcO-jB-tBU"/>
+                                    <constraint firstAttribute="trailing" secondItem="d74-2n-XHX" secondAttribute="trailing" constant="20" id="K0k-A3-za3"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wh9-eb-V9s" secondAttribute="trailing" constant="20" id="P42-hL-oCS"/>
+                                    <constraint firstItem="WYD-xx-Gqv" firstAttribute="leading" secondItem="6hx-Vr-MzP" secondAttribute="leading" constant="20" id="eB4-Ep-jC8"/>
+                                    <constraint firstItem="Wh9-eb-V9s" firstAttribute="leading" secondItem="WYD-xx-Gqv" secondAttribute="trailing" constant="12" id="pBT-vM-zKA"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="smT-2M-57u">
-                                    <size key="itemSize" width="114" height="107"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlantCollectionViewCell" id="UUy-F1-1sb">
-                                        <rect key="frame" x="0.0" y="0.0" width="114" height="107"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bz2-kf-pY4">
-                                            <rect key="frame" x="0.0" y="0.0" width="114" height="107"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                        <size key="customSize" width="114" height="107"/>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ko4-60-gjp">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" image="Today-Active" id="tHO-o6-apr">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <segue destination="2v5-Ye-jUG" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="hzK-3a-mIo"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="9gF-8i-y7I"/>
+                                    <barButtonItem title="My Plants" image="Plants-Inactive" id="dYb-Z0-JFT">
+                                        <color key="tintColor" red="0.16862745100000001" green="0.87450980389999999" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="1fD-1F-3fI"/>
+                                    <barButtonItem title="Item" image="Diagnostics-Inactive" id="V4m-ji-JAv">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <segue destination="YWz-T2-J19" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="GOR-De-GUc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="tkU-GP-GV3"/>
+                                    <barButtonItem title="Item" image="Profile-Inactive" id="TtS-5P-6zR">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.96862745100000003" green="0.97647058819999999" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.97647058823529409" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="H49-Ic-jUu" firstAttribute="trailing" secondItem="d74-2n-XHX" secondAttribute="trailing" constant="20" id="0zX-5U-gfl"/>
+                            <constraint firstItem="6hx-Vr-MzP" firstAttribute="top" secondItem="2Pq-oh-JD5" secondAttribute="bottom" constant="18" id="1bF-IH-Kpt"/>
                             <constraint firstItem="2Pq-oh-JD5" firstAttribute="top" secondItem="H49-Ic-jUu" secondAttribute="top" id="5T8-Tx-6dq"/>
-                            <constraint firstItem="d74-2n-XHX" firstAttribute="top" secondItem="WYD-xx-Gqv" secondAttribute="bottom" constant="15" id="EYh-gm-5cY"/>
-                            <constraint firstItem="d74-2n-XHX" firstAttribute="centerX" secondItem="MWQ-Jh-R9C" secondAttribute="centerX" id="G6L-wt-ndG"/>
+                            <constraint firstItem="6hx-Vr-MzP" firstAttribute="leading" secondItem="H49-Ic-jUu" secondAttribute="leading" id="8fD-YB-nsA"/>
+                            <constraint firstItem="6hx-Vr-MzP" firstAttribute="trailing" secondItem="H49-Ic-jUu" secondAttribute="trailing" id="9MW-tz-o1F"/>
                             <constraint firstItem="2Pq-oh-JD5" firstAttribute="centerX" secondItem="MWQ-Jh-R9C" secondAttribute="centerX" id="Gh8-5r-8pM"/>
-                            <constraint firstItem="H49-Ic-jUu" firstAttribute="trailing" secondItem="Wh9-eb-V9s" secondAttribute="trailing" constant="20" id="UV7-dH-F4S"/>
-                            <constraint firstItem="d74-2n-XHX" firstAttribute="leading" secondItem="H49-Ic-jUu" secondAttribute="leading" constant="20" id="eva-5Q-ICl"/>
-                            <constraint firstItem="WYD-xx-Gqv" firstAttribute="top" secondItem="2Pq-oh-JD5" secondAttribute="bottom" constant="33" id="jsE-Cx-RqX"/>
-                            <constraint firstItem="WYD-xx-Gqv" firstAttribute="leading" secondItem="H49-Ic-jUu" secondAttribute="leading" constant="20" id="pCb-aD-HYR"/>
-                            <constraint firstItem="Wh9-eb-V9s" firstAttribute="leading" secondItem="WYD-xx-Gqv" secondAttribute="trailing" constant="12" id="q7K-PJ-Axz"/>
-                            <constraint firstItem="Wh9-eb-V9s" firstAttribute="top" secondItem="2Pq-oh-JD5" secondAttribute="bottom" constant="33" id="zcj-Ba-rmD"/>
+                            <constraint firstAttribute="bottom" secondItem="6hx-Vr-MzP" secondAttribute="bottom" id="qxo-Mp-3B8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="H49-Ic-jUu"/>
                     </view>
                     <connections>
+                        <outlet property="containerView" destination="6hx-Vr-MzP" id="h67-Ef-38Y"/>
                         <outlet property="myPlantsCV" destination="d74-2n-XHX" id="p7h-LX-7N8"/>
                         <outlet property="myPlantsLabel" destination="2Pq-oh-JD5" id="ye5-EL-zRy"/>
                         <outlet property="searchBar" destination="WYD-xx-Gqv" id="hqA-QE-rt1"/>
@@ -434,11 +449,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v8o-Rw-xkn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="907" y="814"/>
+            <point key="canvasLocation" x="905.79710144927549" y="813.61607142857144"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="tdL-Kq-Xyd"/>
+        <segue reference="bCN-iS-5FQ"/>
+        <segue reference="GOR-De-GUc"/>
+        <segue reference="hzK-3a-mIo"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Action button inactive" width="130" height="42.5"/>
@@ -449,6 +466,5 @@
         <image name="Profile-Inactive" width="22.5" height="22.5"/>
         <image name="Round background" width="30" height="30.5"/>
         <image name="Today-Active" width="22.5" height="22.5"/>
-        <image name="Today-Inactive" width="22.5" height="22.5"/>
     </resources>
 </document>

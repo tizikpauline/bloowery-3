@@ -15,6 +15,8 @@ struct Item {
 
 class MyPlantsViewController: UIViewController, UISearchBarDelegate {
     
+    @IBOutlet weak var containerView: UIView!
+    
     @IBOutlet weak var myPlantsLabel: UILabel!
     
     @IBOutlet weak var searchBar: UISearchBar!
@@ -53,12 +55,18 @@ class MyPlantsViewController: UIViewController, UISearchBarDelegate {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         setupCollectionViewItemSize()
+        bordersContainerView()
         setupColor()
     }
     
     func setupColor() {
         searchBar.isTranslucent = false
         searchBar.barTintColor = UIColor(red: 0.96, green: 0.97, blue: 1.00, alpha: 1.00)
+    }
+    
+    private func bordersContainerView() {
+        containerView.layer.cornerRadius = 20
+        containerView.layer.masksToBounds = true
     }
     
 
