@@ -213,7 +213,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JDd-7l-0e8">
-                                <rect key="frame" x="0.0" y="84" width="414" height="727"/>
+                                <rect key="frame" x="0.0" y="84" width="414" height="729"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uHh-l8-rSZ">
                                         <rect key="frame" x="20" y="30" width="374" height="666"/>
@@ -254,25 +254,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TGZ-gl-5ZT">
-                                <rect key="frame" x="0.0" y="811" width="414" height="44"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o90-fi-eHU">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <items>
-                                    <barButtonItem title="Item" image="Today-Active" id="t3N-pP-6TV">
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <connections>
-                                            <segue destination="2v5-Ye-jUG" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="EjO-fV-vCw"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Txp-eb-oCm"/>
-                                    <barButtonItem title="My Plants" image="Plants-Inactive" id="OaM-ac-HXZ">
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="frn-SA-fQ9"/>
-                                    <barButtonItem title="Item" image="Diagnostics-Inactive" id="e36-lp-xu1">
+                                    <barButtonItem title="Item" image="Today-Active" id="hPt-dT-lNw">
                                         <color key="tintColor" red="0.16862745100000001" green="0.87450980389999999" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="syd-XT-1IB"/>
-                                    <barButtonItem title="Item" image="Profile-Inactive" id="4ZR-LD-LLQ">
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="wMZ-wD-Xt5"/>
+                                    <barButtonItem title="My Plants" image="Plants-Inactive" id="8Ae-Ku-IID">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="bDz-db-hHC"/>
+                                    <barButtonItem title="Item" image="Diagnostics-Inactive" id="MMq-dh-uLW">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="p8k-Pa-1cc"/>
+                                    <barButtonItem title="Item" image="Profile-Inactive" id="4bO-xi-WPV">
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </barButtonItem>
                                 </items>
@@ -282,14 +279,15 @@
                         <color key="backgroundColor" red="0.96862745100000003" green="0.97647058819999999" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="JDd-7l-0e8" firstAttribute="trailing" secondItem="xog-sf-O1d" secondAttribute="trailing" id="3Cu-vE-gMj"/>
+                            <constraint firstItem="o90-fi-eHU" firstAttribute="bottom" secondItem="xog-sf-O1d" secondAttribute="bottom" id="7af-rz-mRK"/>
                             <constraint firstItem="Lhm-Hm-nI3" firstAttribute="centerX" secondItem="098-WY-vLt" secondAttribute="centerX" id="99y-sh-DGx"/>
+                            <constraint firstItem="o90-fi-eHU" firstAttribute="trailing" secondItem="xog-sf-O1d" secondAttribute="trailing" id="CXu-PJ-atF"/>
                             <constraint firstItem="JDd-7l-0e8" firstAttribute="leading" secondItem="xog-sf-O1d" secondAttribute="leading" id="CdV-64-tpA"/>
-                            <constraint firstItem="TGZ-gl-5ZT" firstAttribute="leading" secondItem="xog-sf-O1d" secondAttribute="leading" id="Mkm-CR-0d7"/>
-                            <constraint firstItem="TGZ-gl-5ZT" firstAttribute="trailing" secondItem="xog-sf-O1d" secondAttribute="trailing" id="YSo-9g-v8m"/>
-                            <constraint firstItem="TGZ-gl-5ZT" firstAttribute="top" secondItem="JDd-7l-0e8" secondAttribute="bottom" id="cZ9-T3-bql"/>
+                            <constraint firstItem="o90-fi-eHU" firstAttribute="top" secondItem="JDd-7l-0e8" secondAttribute="bottom" id="KMb-eC-qIa"/>
+                            <constraint firstItem="o90-fi-eHU" firstAttribute="top" secondItem="JDd-7l-0e8" secondAttribute="bottom" id="Poc-wL-LMM"/>
                             <constraint firstItem="Lhm-Hm-nI3" firstAttribute="top" secondItem="xog-sf-O1d" secondAttribute="top" id="hij-dB-5ar"/>
                             <constraint firstItem="JDd-7l-0e8" firstAttribute="top" secondItem="Lhm-Hm-nI3" secondAttribute="bottom" constant="18" id="n5R-MR-yTv"/>
-                            <constraint firstItem="xog-sf-O1d" firstAttribute="bottom" secondItem="TGZ-gl-5ZT" secondAttribute="bottom" constant="7" id="ref-xH-pXc"/>
+                            <constraint firstItem="o90-fi-eHU" firstAttribute="leading" secondItem="xog-sf-O1d" secondAttribute="leading" id="yd1-3F-6ag"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xog-sf-O1d"/>
                     </view>
@@ -334,7 +332,7 @@
                                     <barButtonItem title="Item" image="Today-Inactive" id="bkW-Hp-vVY">
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <segue destination="2v5-Ye-jUG" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="WUE-iI-mJa"/>
+                                            <segue destination="2v5-Ye-jUG" kind="presentation" modalPresentationStyle="fullScreen" id="hVI-m8-M9H"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Z8Z-Mu-9Du"/>
@@ -441,7 +439,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="tdL-Kq-Xyd"/>
-        <segue reference="EjO-fV-vCw"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Action button inactive" width="130" height="42.5"/>

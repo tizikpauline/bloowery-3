@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,9 @@
 		43AC56DB2455D2BD00F8F4C4 /* PlantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AC56D92455D2BD00F8F4C4 /* PlantCollectionViewCell.swift */; };
 		43AC56DC2455D2BD00F8F4C4 /* PlantCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC56DA2455D2BD00F8F4C4 /* PlantCollectionViewCell.xib */; };
 		43AC56E02455D52900F8F4C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43AC56DF2455D52900F8F4C4 /* GoogleService-Info.plist */; };
+		43D766BC2455F3E300CF790A /* SwiftnGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D766BB2455F3E300CF790A /* SwiftnGif.swift */; };
+		43D766BE2455F48400CF790A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D766BD2455F48400CF790A /* SplashViewController.swift */; };
+		43D766C02455F61200CF790A /* animation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 43D766BF2455F61200CF790A /* animation.gif */; };
 		6D4C78FBF55B8B57B9C2F4F9 /* Pods_bloowery_3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50AEDBD86F8E369510ADED9C /* Pods_bloowery_3.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +46,9 @@
 		43AC56D92455D2BD00F8F4C4 /* PlantCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCollectionViewCell.swift; sourceTree = "<group>"; };
 		43AC56DA2455D2BD00F8F4C4 /* PlantCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlantCollectionViewCell.xib; sourceTree = "<group>"; };
 		43AC56DF2455D52900F8F4C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		43D766BB2455F3E300CF790A /* SwiftnGif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftnGif.swift; sourceTree = "<group>"; };
+		43D766BD2455F48400CF790A /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		43D766BF2455F61200CF790A /* animation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = animation.gif; sourceTree = "<group>"; };
 		50AEDBD86F8E369510ADED9C /* Pods_bloowery_3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bloowery_3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3385265DD40836FD4CB865 /* Pods-bloowery-3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bloowery-3.debug.xcconfig"; path = "Target Support Files/Pods-bloowery-3/Pods-bloowery-3.debug.xcconfig"; sourceTree = "<group>"; };
 		E19AC3AF54416287E3C2E805 /* Pods-bloowery-3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bloowery-3.release.xcconfig"; path = "Target Support Files/Pods-bloowery-3/Pods-bloowery-3.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,12 +101,15 @@
 				43AC56CD2455D17300F8F4C4 /* MyPlantsViewController.swift */,
 				43AC56CF2455D1A500F8F4C4 /* DiagnosticViewController.swift */,
 				43AC56BD2455D08E00F8F4C4 /* Main.storyboard */,
+				43D766BD2455F48400CF790A /* SplashViewController.swift */,
+				43D766BB2455F3E300CF790A /* SwiftnGif.swift */,
 				43AC56D92455D2BD00F8F4C4 /* PlantCollectionViewCell.swift */,
 				43AC56DA2455D2BD00F8F4C4 /* PlantCollectionViewCell.xib */,
 				43AC56D12455D21600F8F4C4 /* TaskCollectionViewCell.swift */,
 				43AC56D22455D21600F8F4C4 /* TaskCollectionViewCell.xib */,
 				43AC56D52455D24800F8F4C4 /* TaskCollectionViewCell2.swift */,
 				43AC56D62455D24800F8F4C4 /* TaskCollectionViewCell2.xib */,
+				43D766BF2455F61200CF790A /* animation.gif */,
 				43AC56DF2455D52900F8F4C4 /* GoogleService-Info.plist */,
 				43AC56C02455D08F00F8F4C4 /* Assets.xcassets */,
 				43AC56C22455D08F00F8F4C4 /* LaunchScreen.storyboard */,
@@ -115,7 +124,6 @@
 				BE3385265DD40836FD4CB865 /* Pods-bloowery-3.debug.xcconfig */,
 				E19AC3AF54416287E3C2E805 /* Pods-bloowery-3.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -180,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43AC56C42455D08F00F8F4C4 /* LaunchScreen.storyboard in Resources */,
+				43D766C02455F61200CF790A /* animation.gif in Resources */,
 				43AC56D82455D24800F8F4C4 /* TaskCollectionViewCell2.xib in Resources */,
 				43AC56D42455D21600F8F4C4 /* TaskCollectionViewCell.xib in Resources */,
 				43AC56C12455D08F00F8F4C4 /* Assets.xcassets in Resources */,
@@ -244,8 +253,10 @@
 				43AC56D02455D1A500F8F4C4 /* DiagnosticViewController.swift in Sources */,
 				43AC56D32455D21600F8F4C4 /* TaskCollectionViewCell.swift in Sources */,
 				43AC56CE2455D17300F8F4C4 /* MyPlantsViewController.swift in Sources */,
+				43D766BC2455F3E300CF790A /* SwiftnGif.swift in Sources */,
 				43AC56DB2455D2BD00F8F4C4 /* PlantCollectionViewCell.swift in Sources */,
 				43AC56BA2455D08E00F8F4C4 /* SceneDelegate.swift in Sources */,
+				43D766BE2455F48400CF790A /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
