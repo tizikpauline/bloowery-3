@@ -1,24 +1,457 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2v5-Ye-jUG">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="g7Z-gq-TJt">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="2v5-Ye-jUG" customClass="ViewController" customModule="bloowery_3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f8b-zf-cmO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t36-oQ-tK5">
+                                <rect key="frame" x="359" y="99" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="jvd-32-6mO"/>
+                                    <constraint firstAttribute="height" constant="35" id="lYd-tF-PQa"/>
+                                </constraints>
+                                <state key="normal" image="Down" backgroundImage="Round background"/>
+                                <connections>
+                                    <action selector="unwrapTasks:" destination="2v5-Ye-jUG" eventType="touchUpInside" id="phL-k7-wWT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Задачи на сегодня" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05b-Fi-B9i">
+                                <rect key="frame" x="127.5" y="44" width="159" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="go8-aY-eYe">
+                                <rect key="frame" x="20" y="144" width="374" height="228"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="228" id="dZ4-Dt-TRa"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="15" minimumInteritemSpacing="10" id="aw6-5E-BYD">
+                                    <size key="itemSize" width="366" height="65"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TaskCollectionViewCell" id="MTO-ev-f9z">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WOJ-GB-DzL">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="65"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.95686274510000002" green="0.96862745100000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="374" height="65"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2R0-iD-Cdu">
+                                <rect key="frame" x="214" y="99" width="135" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="V1J-eQ-xfx"/>
+                                    <constraint firstAttribute="width" constant="135" id="xUV-Ju-kvO"/>
+                                </constraints>
+                                <state key="normal" title="Выполнить все" backgroundImage="Action button inactive">
+                                    <color key="titleColor" red="0.50588235290000005" green="0.50588235290000005" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="allDone:" destination="2v5-Ye-jUG" eventType="touchUpInside" id="0DY-kE-ZZI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Удобрение" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snG-U9-tA1">
+                                <rect key="frame" x="20" y="407" width="111" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kdg-K0-rxB">
+                                <rect key="frame" x="359" y="403" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="7ub-mn-b6m"/>
+                                    <constraint firstAttribute="height" constant="35" id="fwC-d0-FU1"/>
+                                </constraints>
+                                <state key="normal" image="Down" backgroundImage="Round background"/>
+                                <connections>
+                                    <action selector="unwrapTasks2:" destination="2v5-Ye-jUG" eventType="touchUpInside" id="qE4-84-fWm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNc-b7-uIE">
+                                <rect key="frame" x="214" y="403" width="135" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="Cjk-Uz-Sqf"/>
+                                    <constraint firstAttribute="height" constant="35" id="Ws5-vf-F9l"/>
+                                </constraints>
+                                <state key="normal" title="Выполнить все" backgroundImage="Action button inactive">
+                                    <color key="titleColor" red="0.50588235290000005" green="0.50588235290000005" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="allDone2:" destination="2v5-Ye-jUG" eventType="touchUpInside" id="SKS-JF-fyC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Полив" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gu4-pk-ZPc">
+                                <rect key="frame" x="20" y="103" width="63" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0YH-V0-7f2">
+                                <rect key="frame" x="20" y="448" width="374" height="228"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="228" id="8O0-h9-3u1"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="15" minimumInteritemSpacing="10" id="Gjo-WP-Xe1">
+                                    <size key="itemSize" width="366" height="65"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TaskCollectionViewCell2" id="nPi-TC-DgZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="lW7-2S-Qhm">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="65"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.95686274510000002" green="0.96862745100000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="374" height="65"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1zy-K1-R39">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" image="Today-Active" id="S17-hr-e6C">
+                                        <color key="tintColor" red="0.16862745100000001" green="0.87450980389999999" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="OZu-BX-WKh"/>
+                                    <barButtonItem title="My Plants" image="Plants-Inactive" id="gVS-Si-Uug">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <segue destination="YSJ-WO-KdV" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Zmr-yT-ot9"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="JHV-a2-ziW"/>
+                                    <barButtonItem title="Item" image="Diagnostics-Inactive" id="qHt-8u-RTx">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <segue destination="YWz-T2-J19" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="tdL-Kq-Xyd"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="uwe-9S-nrT"/>
+                                    <barButtonItem title="Item" image="Profile-Inactive" id="LsC-WT-EbH">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.96862745100000003" green="0.97647058819999999" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0YH-V0-7f2" firstAttribute="centerX" secondItem="f8b-zf-cmO" secondAttribute="centerX" id="0R4-cx-DJF"/>
+                            <constraint firstItem="0YH-V0-7f2" firstAttribute="leading" secondItem="2cP-G6-9hU" secondAttribute="leading" constant="20" id="B52-A2-CGO"/>
+                            <constraint firstItem="t36-oQ-tK5" firstAttribute="top" secondItem="05b-Fi-B9i" secondAttribute="bottom" constant="33" id="CcI-vB-tGw"/>
+                            <constraint firstItem="2cP-G6-9hU" firstAttribute="trailing" secondItem="t36-oQ-tK5" secondAttribute="trailing" constant="20" id="CoQ-jd-4TL"/>
+                            <constraint firstItem="0YH-V0-7f2" firstAttribute="top" secondItem="Kdg-K0-rxB" secondAttribute="bottom" constant="10" id="DcU-6Q-hbp"/>
+                            <constraint firstItem="go8-aY-eYe" firstAttribute="leading" secondItem="2cP-G6-9hU" secondAttribute="leading" constant="20" id="EfJ-TM-aCz"/>
+                            <constraint firstItem="go8-aY-eYe" firstAttribute="centerX" secondItem="f8b-zf-cmO" secondAttribute="centerX" id="Ekf-gm-b2N"/>
+                            <constraint firstItem="Kdg-K0-rxB" firstAttribute="top" secondItem="go8-aY-eYe" secondAttribute="bottom" constant="31" id="Hy5-Nv-OmC"/>
+                            <constraint firstItem="0YH-V0-7f2" firstAttribute="top" secondItem="GNc-b7-uIE" secondAttribute="bottom" constant="10" id="JKm-cD-oeg"/>
+                            <constraint firstItem="go8-aY-eYe" firstAttribute="top" secondItem="2R0-iD-Cdu" secondAttribute="bottom" constant="10" id="POD-hq-DBf"/>
+                            <constraint firstItem="go8-aY-eYe" firstAttribute="top" secondItem="Gu4-pk-ZPc" secondAttribute="bottom" constant="14" id="Phr-YX-tqS"/>
+                            <constraint firstItem="2R0-iD-Cdu" firstAttribute="top" secondItem="05b-Fi-B9i" secondAttribute="bottom" constant="33" id="QYA-GU-Vrx"/>
+                            <constraint firstItem="2cP-G6-9hU" firstAttribute="trailing" secondItem="Kdg-K0-rxB" secondAttribute="trailing" constant="20" id="Wgk-v0-jfL"/>
+                            <constraint firstItem="t36-oQ-tK5" firstAttribute="leading" secondItem="2R0-iD-Cdu" secondAttribute="trailing" constant="10" id="XWx-5j-YUR"/>
+                            <constraint firstItem="2cP-G6-9hU" firstAttribute="trailing" secondItem="0YH-V0-7f2" secondAttribute="trailing" constant="20" id="YDi-Ri-dMH"/>
+                            <constraint firstItem="0YH-V0-7f2" firstAttribute="top" secondItem="snG-U9-tA1" secondAttribute="bottom" constant="14" id="acs-Nh-gsm"/>
+                            <constraint firstItem="2cP-G6-9hU" firstAttribute="trailing" secondItem="go8-aY-eYe" secondAttribute="trailing" constant="20" id="fVU-9e-lgv"/>
+                            <constraint firstItem="snG-U9-tA1" firstAttribute="leading" secondItem="2cP-G6-9hU" secondAttribute="leading" constant="20" id="gCB-u1-Mb6"/>
+                            <constraint firstItem="05b-Fi-B9i" firstAttribute="top" secondItem="2cP-G6-9hU" secondAttribute="top" id="ihe-kd-FDm"/>
+                            <constraint firstItem="Kdg-K0-rxB" firstAttribute="leading" secondItem="GNc-b7-uIE" secondAttribute="trailing" constant="10" id="jcg-7C-55K"/>
+                            <constraint firstItem="Gu4-pk-ZPc" firstAttribute="top" secondItem="05b-Fi-B9i" secondAttribute="bottom" constant="37" id="nYP-Yw-Wcm"/>
+                            <constraint firstItem="snG-U9-tA1" firstAttribute="top" secondItem="go8-aY-eYe" secondAttribute="bottom" constant="35" id="omR-g8-H8R"/>
+                            <constraint firstItem="GNc-b7-uIE" firstAttribute="top" secondItem="go8-aY-eYe" secondAttribute="bottom" constant="31" id="pZX-Jj-wHb"/>
+                            <constraint firstItem="05b-Fi-B9i" firstAttribute="centerX" secondItem="f8b-zf-cmO" secondAttribute="centerX" id="pkf-bV-ikM"/>
+                            <constraint firstItem="Gu4-pk-ZPc" firstAttribute="leading" secondItem="2cP-G6-9hU" secondAttribute="leading" constant="20" id="qfy-tb-Azc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2cP-G6-9hU"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QZD-aM-Vb5"/>
+                    <connections>
+                        <outlet property="cvFertilizer" destination="0YH-V0-7f2" id="bfV-Bd-2nL"/>
+                        <outlet property="cvWatering" destination="go8-aY-eYe" id="kEh-0V-Owj"/>
+                        <outlet property="fertilizerTasks" destination="snG-U9-tA1" id="GVf-yp-aLo"/>
+                        <outlet property="todayTasks" destination="05b-Fi-B9i" id="5bC-aI-uFT"/>
+                        <outlet property="wateringTasks" destination="Gu4-pk-ZPc" id="0Fh-76-qXp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0rr-ay-0Ky" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1776.8115942028987" y="813.61607142857144"/>
+        </scene>
+        <!--Diagnostic View Controller-->
+        <scene sceneID="qN7-XI-SNQ">
+            <objects>
+                <viewController id="YWz-T2-J19" customClass="DiagnosticViewController" customModule="bloowery_3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="098-WY-vLt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JDd-7l-0e8">
+                                <rect key="frame" x="0.0" y="84" width="414" height="727"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uHh-l8-rSZ">
+                                        <rect key="frame" x="20" y="30" width="374" height="666"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="666" id="7mr-sX-V0H"/>
+                                            <constraint firstAttribute="width" constant="374" id="huP-ng-52a"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PqF-Td-pcc">
+                                            <size key="itemSize" width="114" height="107"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlantCollectionViewCell" id="bcA-sx-C7v" customClass="PlantCollectionViewCell" customModule="bloowery_2">
+                                                <rect key="frame" x="0.0" y="0.0" width="114" height="107"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="zLN-xK-Tb4">
+                                                    <rect key="frame" x="0.0" y="0.0" width="114" height="107"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </collectionViewCellContentView>
+                                                <size key="customSize" width="114" height="107"/>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="uHh-l8-rSZ" firstAttribute="top" secondItem="JDd-7l-0e8" secondAttribute="top" constant="30" id="hNu-vS-zKr"/>
+                                    <constraint firstAttribute="trailing" secondItem="uHh-l8-rSZ" secondAttribute="trailing" constant="20" id="nrA-kl-s1g"/>
+                                    <constraint firstItem="uHh-l8-rSZ" firstAttribute="leading" secondItem="JDd-7l-0e8" secondAttribute="leading" constant="20" id="w5v-aL-WsT"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Диагностика" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lhm-Hm-nI3">
+                                <rect key="frame" x="152.5" y="44" width="109" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TGZ-gl-5ZT">
+                                <rect key="frame" x="0.0" y="811" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" image="Today-Active" id="t3N-pP-6TV">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <segue destination="2v5-Ye-jUG" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="EjO-fV-vCw"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Txp-eb-oCm"/>
+                                    <barButtonItem title="My Plants" image="Plants-Inactive" id="OaM-ac-HXZ">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="frn-SA-fQ9"/>
+                                    <barButtonItem title="Item" image="Diagnostics-Inactive" id="e36-lp-xu1">
+                                        <color key="tintColor" red="0.16862745100000001" green="0.87450980389999999" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="syd-XT-1IB"/>
+                                    <barButtonItem title="Item" image="Profile-Inactive" id="4ZR-LD-LLQ">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.96862745100000003" green="0.97647058819999999" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.97647058819999999" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="JDd-7l-0e8" firstAttribute="trailing" secondItem="xog-sf-O1d" secondAttribute="trailing" id="3Cu-vE-gMj"/>
+                            <constraint firstItem="Lhm-Hm-nI3" firstAttribute="centerX" secondItem="098-WY-vLt" secondAttribute="centerX" id="99y-sh-DGx"/>
+                            <constraint firstItem="JDd-7l-0e8" firstAttribute="leading" secondItem="xog-sf-O1d" secondAttribute="leading" id="CdV-64-tpA"/>
+                            <constraint firstItem="TGZ-gl-5ZT" firstAttribute="leading" secondItem="xog-sf-O1d" secondAttribute="leading" id="Mkm-CR-0d7"/>
+                            <constraint firstItem="TGZ-gl-5ZT" firstAttribute="trailing" secondItem="xog-sf-O1d" secondAttribute="trailing" id="YSo-9g-v8m"/>
+                            <constraint firstItem="TGZ-gl-5ZT" firstAttribute="top" secondItem="JDd-7l-0e8" secondAttribute="bottom" id="cZ9-T3-bql"/>
+                            <constraint firstItem="Lhm-Hm-nI3" firstAttribute="top" secondItem="xog-sf-O1d" secondAttribute="top" id="hij-dB-5ar"/>
+                            <constraint firstItem="JDd-7l-0e8" firstAttribute="top" secondItem="Lhm-Hm-nI3" secondAttribute="bottom" constant="18" id="n5R-MR-yTv"/>
+                            <constraint firstItem="xog-sf-O1d" firstAttribute="bottom" secondItem="TGZ-gl-5ZT" secondAttribute="bottom" constant="7" id="ref-xH-pXc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xog-sf-O1d"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Y6S-UE-Mqa"/>
+                    <connections>
+                        <outlet property="containerView" destination="JDd-7l-0e8" id="VkO-Mg-eX6"/>
+                        <outlet property="labelDiagnostic" destination="Lhm-Hm-nI3" id="muv-Km-QxG"/>
+                        <outlet property="plantsDCV" destination="uHh-l8-rSZ" id="gDp-6E-Iwb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xY5-Fm-k2W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2669.5652173913045" y="813.61607142857144"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="w2i-d5-G9E">
+            <objects>
+                <viewController id="2q5-Qu-ffI" customClass="ChatViewController" customModule="bloowery_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Q0-xx-a6I">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="xG8-fW-uSc"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NRU-qw-fba" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="3414" y="814"/>
+        </scene>
+        <!--My Plants View Controller-->
+        <scene sceneID="Wp9-4T-fta">
+            <objects>
+                <viewController id="YSJ-WO-KdV" customClass="MyPlantsViewController" customModule="bloowery_3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MWQ-Jh-R9C">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N1j-Oz-Kga">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" image="Today-Inactive" id="bkW-Hp-vVY">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <segue destination="2v5-Ye-jUG" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="WUE-iI-mJa"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Z8Z-Mu-9Du"/>
+                                    <barButtonItem title="Item" image="Plants-Inactive" id="sx6-l7-Woi">
+                                        <color key="tintColor" red="0.16862745100000001" green="0.87450980389999999" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="eNl-OZ-byH"/>
+                                    <barButtonItem title="Item" image="Diagnostics-Inactive" id="FOf-Yb-OI5">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <segue destination="YWz-T2-J19" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="ySz-ix-Gue"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="DDa-0b-RpB"/>
+                                    <barButtonItem title="Item" image="Profile-Inactive" id="ZGD-uq-YUC">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.96862745100000003" green="0.97647058819999999" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мои растения" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Pq-oh-JD5">
+                                <rect key="frame" x="147.5" y="44" width="119" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" placeholderIntrinsicWidth="329" placeholderIntrinsicHeight="35" searchBarStyle="minimal" placeholder="Поиск" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYD-xx-Gqv">
+                                <rect key="frame" x="20" y="99" width="329" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="NUt-eo-bDs"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <offsetWrapper key="searchFieldBackgroundPositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="YSJ-WO-KdV" id="bdZ-Sd-hCz"/>
+                                </connections>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wh9-eb-V9s">
+                                <rect key="frame" x="361" y="99" width="33" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="33" id="UrE-gt-0b0"/>
+                                    <constraint firstAttribute="height" constant="33" id="xdm-0t-xTG"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Add Plant"/>
+                                <connections>
+                                    <action selector="addPlantButton:" destination="YSJ-WO-KdV" eventType="touchUpInside" id="Xxk-7v-rFw"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="d74-2n-XHX">
+                                <rect key="frame" x="20" y="149" width="374" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="666" id="8kN-tt-cyM"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="smT-2M-57u">
+                                    <size key="itemSize" width="114" height="107"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlantCollectionViewCell" id="UUy-F1-1sb">
+                                        <rect key="frame" x="0.0" y="0.0" width="114" height="107"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bz2-kf-pY4">
+                                            <rect key="frame" x="0.0" y="0.0" width="114" height="107"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="114" height="107"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="H49-Ic-jUu" firstAttribute="trailing" secondItem="d74-2n-XHX" secondAttribute="trailing" constant="20" id="0zX-5U-gfl"/>
+                            <constraint firstItem="2Pq-oh-JD5" firstAttribute="top" secondItem="H49-Ic-jUu" secondAttribute="top" id="5T8-Tx-6dq"/>
+                            <constraint firstItem="d74-2n-XHX" firstAttribute="top" secondItem="WYD-xx-Gqv" secondAttribute="bottom" constant="15" id="EYh-gm-5cY"/>
+                            <constraint firstItem="d74-2n-XHX" firstAttribute="centerX" secondItem="MWQ-Jh-R9C" secondAttribute="centerX" id="G6L-wt-ndG"/>
+                            <constraint firstItem="2Pq-oh-JD5" firstAttribute="centerX" secondItem="MWQ-Jh-R9C" secondAttribute="centerX" id="Gh8-5r-8pM"/>
+                            <constraint firstItem="H49-Ic-jUu" firstAttribute="trailing" secondItem="Wh9-eb-V9s" secondAttribute="trailing" constant="20" id="UV7-dH-F4S"/>
+                            <constraint firstItem="d74-2n-XHX" firstAttribute="leading" secondItem="H49-Ic-jUu" secondAttribute="leading" constant="20" id="eva-5Q-ICl"/>
+                            <constraint firstItem="WYD-xx-Gqv" firstAttribute="top" secondItem="2Pq-oh-JD5" secondAttribute="bottom" constant="33" id="jsE-Cx-RqX"/>
+                            <constraint firstItem="WYD-xx-Gqv" firstAttribute="leading" secondItem="H49-Ic-jUu" secondAttribute="leading" constant="20" id="pCb-aD-HYR"/>
+                            <constraint firstItem="Wh9-eb-V9s" firstAttribute="leading" secondItem="WYD-xx-Gqv" secondAttribute="trailing" constant="12" id="q7K-PJ-Axz"/>
+                            <constraint firstItem="Wh9-eb-V9s" firstAttribute="top" secondItem="2Pq-oh-JD5" secondAttribute="bottom" constant="33" id="zcj-Ba-rmD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="H49-Ic-jUu"/>
+                    </view>
+                    <connections>
+                        <outlet property="myPlantsCV" destination="d74-2n-XHX" id="p7h-LX-7N8"/>
+                        <outlet property="myPlantsLabel" destination="2Pq-oh-JD5" id="ye5-EL-zRy"/>
+                        <outlet property="searchBar" destination="WYD-xx-Gqv" id="hqA-QE-rt1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v8o-Rw-xkn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="907" y="814"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="tdL-Kq-Xyd"/>
+        <segue reference="EjO-fV-vCw"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Action button inactive" width="130" height="42.5"/>
+        <image name="Add Plant" width="33" height="33"/>
+        <image name="Diagnostics-Inactive" width="22.5" height="21.5"/>
+        <image name="Down" width="12.5" height="7"/>
+        <image name="Plants-Inactive" width="21.5" height="22.5"/>
+        <image name="Profile-Inactive" width="22.5" height="22.5"/>
+        <image name="Round background" width="30" height="30.5"/>
+        <image name="Today-Active" width="22.5" height="22.5"/>
+        <image name="Today-Inactive" width="22.5" height="22.5"/>
+    </resources>
 </document>

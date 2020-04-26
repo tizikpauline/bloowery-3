@@ -13,6 +13,16 @@
 		43AC56BF2455D08E00F8F4C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43AC56BD2455D08E00F8F4C4 /* Main.storyboard */; };
 		43AC56C12455D08F00F8F4C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43AC56C02455D08F00F8F4C4 /* Assets.xcassets */; };
 		43AC56C42455D08F00F8F4C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43AC56C22455D08F00F8F4C4 /* LaunchScreen.storyboard */; };
+		43AC56CE2455D17300F8F4C4 /* MyPlantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AC56CD2455D17300F8F4C4 /* MyPlantsViewController.swift */; };
+		43AC56D02455D1A500F8F4C4 /* DiagnosticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AC56CF2455D1A500F8F4C4 /* DiagnosticViewController.swift */; };
+		43AC56D32455D21600F8F4C4 /* TaskCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AC56D12455D21600F8F4C4 /* TaskCollectionViewCell.swift */; };
+		43AC56D42455D21600F8F4C4 /* TaskCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC56D22455D21600F8F4C4 /* TaskCollectionViewCell.xib */; };
+		43AC56D72455D24800F8F4C4 /* TaskCollectionViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AC56D52455D24800F8F4C4 /* TaskCollectionViewCell2.swift */; };
+		43AC56D82455D24800F8F4C4 /* TaskCollectionViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC56D62455D24800F8F4C4 /* TaskCollectionViewCell2.xib */; };
+		43AC56DB2455D2BD00F8F4C4 /* PlantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AC56D92455D2BD00F8F4C4 /* PlantCollectionViewCell.swift */; };
+		43AC56DC2455D2BD00F8F4C4 /* PlantCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC56DA2455D2BD00F8F4C4 /* PlantCollectionViewCell.xib */; };
+		43AC56E02455D52900F8F4C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43AC56DF2455D52900F8F4C4 /* GoogleService-Info.plist */; };
+		6D4C78FBF55B8B57B9C2F4F9 /* Pods_bloowery_3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50AEDBD86F8E369510ADED9C /* Pods_bloowery_3.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,18 @@
 		43AC56C02455D08F00F8F4C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43AC56C32455D08F00F8F4C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43AC56C52455D08F00F8F4C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43AC56CD2455D17300F8F4C4 /* MyPlantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlantsViewController.swift; sourceTree = "<group>"; };
+		43AC56CF2455D1A500F8F4C4 /* DiagnosticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticViewController.swift; sourceTree = "<group>"; };
+		43AC56D12455D21600F8F4C4 /* TaskCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCollectionViewCell.swift; sourceTree = "<group>"; };
+		43AC56D22455D21600F8F4C4 /* TaskCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskCollectionViewCell.xib; sourceTree = "<group>"; };
+		43AC56D52455D24800F8F4C4 /* TaskCollectionViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCollectionViewCell2.swift; sourceTree = "<group>"; };
+		43AC56D62455D24800F8F4C4 /* TaskCollectionViewCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskCollectionViewCell2.xib; sourceTree = "<group>"; };
+		43AC56D92455D2BD00F8F4C4 /* PlantCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCollectionViewCell.swift; sourceTree = "<group>"; };
+		43AC56DA2455D2BD00F8F4C4 /* PlantCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlantCollectionViewCell.xib; sourceTree = "<group>"; };
+		43AC56DF2455D52900F8F4C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		50AEDBD86F8E369510ADED9C /* Pods_bloowery_3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bloowery_3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE3385265DD40836FD4CB865 /* Pods-bloowery-3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bloowery-3.debug.xcconfig"; path = "Target Support Files/Pods-bloowery-3/Pods-bloowery-3.debug.xcconfig"; sourceTree = "<group>"; };
+		E19AC3AF54416287E3C2E805 /* Pods-bloowery-3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bloowery-3.release.xcconfig"; path = "Target Support Files/Pods-bloowery-3/Pods-bloowery-3.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D4C78FBF55B8B57B9C2F4F9 /* Pods_bloowery_3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1901FC0BD063C9FFA5CCB689 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50AEDBD86F8E369510ADED9C /* Pods_bloowery_3.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		43AC56AB2455D08E00F8F4C4 = {
 			isa = PBXGroup;
 			children = (
 				43AC56B62455D08E00F8F4C4 /* bloowery-3 */,
 				43AC56B52455D08E00F8F4C4 /* Products */,
+				8484F412D4337B221767EB7F /* Pods */,
+				1901FC0BD063C9FFA5CCB689 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +92,31 @@
 				43AC56B72455D08E00F8F4C4 /* AppDelegate.swift */,
 				43AC56B92455D08E00F8F4C4 /* SceneDelegate.swift */,
 				43AC56BB2455D08E00F8F4C4 /* ViewController.swift */,
+				43AC56CD2455D17300F8F4C4 /* MyPlantsViewController.swift */,
+				43AC56CF2455D1A500F8F4C4 /* DiagnosticViewController.swift */,
 				43AC56BD2455D08E00F8F4C4 /* Main.storyboard */,
+				43AC56D92455D2BD00F8F4C4 /* PlantCollectionViewCell.swift */,
+				43AC56DA2455D2BD00F8F4C4 /* PlantCollectionViewCell.xib */,
+				43AC56D12455D21600F8F4C4 /* TaskCollectionViewCell.swift */,
+				43AC56D22455D21600F8F4C4 /* TaskCollectionViewCell.xib */,
+				43AC56D52455D24800F8F4C4 /* TaskCollectionViewCell2.swift */,
+				43AC56D62455D24800F8F4C4 /* TaskCollectionViewCell2.xib */,
+				43AC56DF2455D52900F8F4C4 /* GoogleService-Info.plist */,
 				43AC56C02455D08F00F8F4C4 /* Assets.xcassets */,
 				43AC56C22455D08F00F8F4C4 /* LaunchScreen.storyboard */,
 				43AC56C52455D08F00F8F4C4 /* Info.plist */,
 			);
 			path = "bloowery-3";
+			sourceTree = "<group>";
+		};
+		8484F412D4337B221767EB7F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE3385265DD40836FD4CB865 /* Pods-bloowery-3.debug.xcconfig */,
+				E19AC3AF54416287E3C2E805 /* Pods-bloowery-3.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +126,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43AC56C82455D08F00F8F4C4 /* Build configuration list for PBXNativeTarget "bloowery-3" */;
 			buildPhases = (
+				2940EB84A01CE65F28AD9649 /* [CP] Check Pods Manifest.lock */,
 				43AC56B02455D08E00F8F4C4 /* Sources */,
 				43AC56B12455D08E00F8F4C4 /* Frameworks */,
 				43AC56B22455D08E00F8F4C4 /* Resources */,
+				59657CCC13558F3A6B592ECC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,20 +180,71 @@
 			buildActionMask = 2147483647;
 			files = (
 				43AC56C42455D08F00F8F4C4 /* LaunchScreen.storyboard in Resources */,
+				43AC56D82455D24800F8F4C4 /* TaskCollectionViewCell2.xib in Resources */,
+				43AC56D42455D21600F8F4C4 /* TaskCollectionViewCell.xib in Resources */,
 				43AC56C12455D08F00F8F4C4 /* Assets.xcassets in Resources */,
+				43AC56DC2455D2BD00F8F4C4 /* PlantCollectionViewCell.xib in Resources */,
 				43AC56BF2455D08E00F8F4C4 /* Main.storyboard in Resources */,
+				43AC56E02455D52900F8F4C4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2940EB84A01CE65F28AD9649 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bloowery-3-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59657CCC13558F3A6B592ECC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bloowery-3/Pods-bloowery-3-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bloowery-3/Pods-bloowery-3-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bloowery-3/Pods-bloowery-3-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		43AC56B02455D08E00F8F4C4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43AC56D72455D24800F8F4C4 /* TaskCollectionViewCell2.swift in Sources */,
 				43AC56BC2455D08E00F8F4C4 /* ViewController.swift in Sources */,
 				43AC56B82455D08E00F8F4C4 /* AppDelegate.swift in Sources */,
+				43AC56D02455D1A500F8F4C4 /* DiagnosticViewController.swift in Sources */,
+				43AC56D32455D21600F8F4C4 /* TaskCollectionViewCell.swift in Sources */,
+				43AC56CE2455D17300F8F4C4 /* MyPlantsViewController.swift in Sources */,
+				43AC56DB2455D2BD00F8F4C4 /* PlantCollectionViewCell.swift in Sources */,
 				43AC56BA2455D08E00F8F4C4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +387,7 @@
 		};
 		43AC56C92455D08F00F8F4C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE3385265DD40836FD4CB865 /* Pods-bloowery-3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +406,7 @@
 		};
 		43AC56CA2455D08F00F8F4C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E19AC3AF54416287E3C2E805 /* Pods-bloowery-3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

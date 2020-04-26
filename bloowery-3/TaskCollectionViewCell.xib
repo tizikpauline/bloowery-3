@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TaskCollectionViewCell" id="rTB-Tv-g5q" customClass="TaskCollectionViewCell" customModule="bloowery_3">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="68"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="68"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="La4-Xw-Ftw">
+                        <rect key="frame" x="0.0" y="0.0" width="68" height="68"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="68" id="abJ-3v-3Jc"/>
+                            <constraint firstAttribute="height" constant="68" id="xqZ-hg-tHb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Задача" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQO-Kv-PBR">
+                        <rect key="frame" x="82" y="11" width="54" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Текст" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNu-Jz-eym">
+                        <rect key="frame" x="82" y="40" width="38" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmM-et-JKb">
+                        <rect key="frame" x="344" y="23" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="dhk-Gx-TVB"/>
+                            <constraint firstAttribute="width" constant="22" id="gOy-RO-IBU"/>
+                        </constraints>
+                        <state key="normal" image="Checkbox Inactive"/>
+                        <state key="selected" image="Checkbox Active"/>
+                        <state key="highlighted" image="Checkbox Active"/>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.95686274510000002" green="0.96862745100000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="oQO-Kv-PBR" firstAttribute="leading" secondItem="La4-Xw-Ftw" secondAttribute="trailing" constant="14" id="8XC-bR-lzg"/>
+                <constraint firstAttribute="bottom" secondItem="HNu-Jz-eym" secondAttribute="bottom" constant="11" id="BWW-wr-ABv"/>
+                <constraint firstItem="HNu-Jz-eym" firstAttribute="leading" secondItem="La4-Xw-Ftw" secondAttribute="trailing" constant="14" id="GTt-Qq-CEg"/>
+                <constraint firstItem="nmM-et-JKb" firstAttribute="centerY" secondItem="rTB-Tv-g5q" secondAttribute="centerY" id="Rr2-2h-cFD"/>
+                <constraint firstItem="La4-Xw-Ftw" firstAttribute="top" secondItem="rTB-Tv-g5q" secondAttribute="top" id="SAc-nh-5we"/>
+                <constraint firstAttribute="trailing" secondItem="nmM-et-JKb" secondAttribute="trailing" constant="8" id="aQr-EJ-5NM"/>
+                <constraint firstItem="oQO-Kv-PBR" firstAttribute="top" secondItem="rTB-Tv-g5q" secondAttribute="top" constant="11" id="boF-XR-Cch"/>
+                <constraint firstAttribute="bottom" secondItem="La4-Xw-Ftw" secondAttribute="bottom" id="kbB-wI-7qW"/>
+                <constraint firstItem="La4-Xw-Ftw" firstAttribute="leading" secondItem="rTB-Tv-g5q" secondAttribute="leading" id="l8d-Ox-GXj"/>
+                <constraint firstItem="HNu-Jz-eym" firstAttribute="top" secondItem="oQO-Kv-PBR" secondAttribute="bottom" constant="9" id="ny2-I0-2uI"/>
+                <constraint firstItem="nmM-et-JKb" firstAttribute="leading" secondItem="kUv-1m-zhd" secondAttribute="leading" constant="344" id="pl4-lk-vVB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="kUv-1m-zhd"/>
+            <size key="customSize" width="223" height="52"/>
+            <connections>
+                <outlet property="checkboxButton" destination="nmM-et-JKb" id="VmZ-7G-S5E"/>
+                <outlet property="plantImage" destination="La4-Xw-Ftw" id="cvv-FD-HAT"/>
+                <outlet property="taskInfo" destination="HNu-Jz-eym" id="Q9k-j3-rKa"/>
+                <outlet property="taskName" destination="oQO-Kv-PBR" id="e3M-Ek-qHC"/>
+            </connections>
+            <point key="canvasLocation" x="261" y="162"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Checkbox Active" width="20.5" height="20.5"/>
+        <image name="Checkbox Inactive" width="20.5" height="20.5"/>
+    </resources>
+</document>
