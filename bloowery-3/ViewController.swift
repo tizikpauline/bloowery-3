@@ -201,7 +201,6 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
             cell.layer.cornerRadius = 10
             cell.layer.masksToBounds = true
             
-            
             return cell
         }
         

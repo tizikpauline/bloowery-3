@@ -318,7 +318,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NRU-qw-fba" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3414" y="814"/>
+            <point key="canvasLocation" x="3167" y="814"/>
         </scene>
         <!--My Plants View Controller-->
         <scene sceneID="Wp9-4T-fta">
@@ -385,6 +385,7 @@
                                         <state key="normal" title="Button" image="Add Plant"/>
                                         <connections>
                                             <action selector="addPlantButton:" destination="YSJ-WO-KdV" eventType="touchUpInside" id="Xxk-7v-rFw"/>
+                                            <segue destination="jtL-nM-0jD" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="GtZ-PV-y00"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -451,6 +452,163 @@
             </objects>
             <point key="canvasLocation" x="905.79710144927549" y="813.61607142857144"/>
         </scene>
+        <!--New Plant View Controller-->
+        <scene sceneID="ERv-db-55h">
+            <objects>
+                <viewController id="jtL-nM-0jD" customClass="NewPlantViewController" customModule="bloowery_3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fou-Sz-8st">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8tZ-vo-lCK">
+                                <rect key="frame" x="0.0" y="84" width="414" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IYu-Rc-o1j">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mh-K3-KCY">
+                                                <rect key="frame" x="24" y="180" width="162" height="26"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Добавить фото" backgroundImage="Add Photo">
+                                                    <color key="titleColor" red="0.96862745100000003" green="0.97647058819999999" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.77254901960784317" green="0.792156862745098" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Jp-ga-ug0">
+                                        <rect key="frame" x="0.0" y="220" width="414" height="510"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNB-Kd-lpl">
+                                                <rect key="frame" x="23" y="15" width="34" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="highlightedColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите текст" textAlignment="natural" minimumFontSize="17" background="input" translatesAutoresizingMaskIntoConstraints="NO" id="fka-Ee-R9s">
+                                                <rect key="frame" x="23" y="44" width="222" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Сорт" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyy-Z9-bhI">
+                                                <rect key="frame" x="23" y="107" width="40" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="highlightedColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Выберите сорт" textAlignment="natural" minimumFontSize="17" background="input" translatesAutoresizingMaskIntoConstraints="NO" id="1Ku-5J-ury">
+                                                <rect key="frame" x="23" y="136" width="222" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Дата посадки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLx-yK-g3T">
+                                                <rect key="frame" x="23" y="203" width="110" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="highlightedColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите дату посадки" textAlignment="natural" minimumFontSize="17" background="input" translatesAutoresizingMaskIntoConstraints="NO" id="ghL-vD-2Uk">
+                                                <rect key="frame" x="23" y="232" width="222" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Период удобрения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUN-na-EPA">
+                                                <rect key="frame" x="23" y="305" width="153" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="highlightedColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Начало периода" textAlignment="natural" minimumFontSize="17" background="input" translatesAutoresizingMaskIntoConstraints="NO" id="iQE-hq-cal">
+                                                <rect key="frame" x="23" y="334" width="222" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Конец периода" textAlignment="natural" minimumFontSize="17" background="input" translatesAutoresizingMaskIntoConstraints="NO" id="14d-gK-qMK">
+                                                <rect key="frame" x="23" y="376" width="222" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M6j-Yd-Zzl">
+                                        <rect key="frame" x="0.0" y="730" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <items>
+                                            <barButtonItem title="Item" image="Today-Active" id="vli-oV-CtR">
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="uaG-gs-5Or"/>
+                                            <barButtonItem title="My Plants" image="Plants-Inactive" id="75l-5E-VUS">
+                                                <color key="tintColor" red="0.16862745100000001" green="0.87450980389999999" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="uOf-xc-pwK"/>
+                                            <barButtonItem title="Item" image="Diagnostics-Inactive" id="pcj-SF-8tK">
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="9YB-B0-3Cl"/>
+                                            <barButtonItem title="Item" image="Profile-Inactive" id="Lm9-Rb-gqg">
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </barButtonItem>
+                                        </items>
+                                        <color key="barTintColor" red="0.96862745100000003" green="0.97647058819999999" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </toolbar>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Новое растение" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2g-RL-CiY">
+                                <rect key="frame" x="140" y="44" width="137" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2Y-iF-dyt">
+                                <rect key="frame" x="20" y="44" width="45" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Назад">
+                                    <color key="titleColor" red="0.57647058823529407" green="0.61568627450980395" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="close" destination="jtL-nM-0jD" eventType="touchUpInside" id="PbH-TC-XvV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0U-27-Z7g">
+                                <rect key="frame" x="349" y="44" width="45" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Далее">
+                                    <color key="titleColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.97647058819999999" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="8Dm-ae-Tmf"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="containerView" destination="8tZ-vo-lCK" id="D5B-fd-Tee"/>
+                        <outlet property="headerLabel" destination="k2g-RL-CiY" id="ibt-Gp-x55"/>
+                        <outlet property="imageContainerView" destination="IYu-Rc-o1j" id="trO-S7-oXp"/>
+                        <outlet property="whiteContainerView" destination="6Jp-ga-ug0" id="k4N-Li-BC3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bSQ-1p-h1O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="905.79710144927549" y="1494.6428571428571"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="bCN-iS-5FQ"/>
@@ -459,6 +617,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Action button inactive" width="130" height="42.5"/>
+        <image name="Add Photo" width="162" height="25.5"/>
         <image name="Add Plant" width="33" height="33"/>
         <image name="Diagnostics-Inactive" width="22.5" height="21.5"/>
         <image name="Down" width="12.5" height="7"/>
@@ -466,5 +625,6 @@
         <image name="Profile-Inactive" width="22.5" height="22.5"/>
         <image name="Round background" width="30" height="30.5"/>
         <image name="Today-Active" width="22.5" height="22.5"/>
+        <image name="input" width="257.5" height="38.5"/>
     </resources>
 </document>

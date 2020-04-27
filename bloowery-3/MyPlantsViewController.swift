@@ -42,6 +42,8 @@ class MyPlantsViewController: UIViewController, UICollectionViewDelegateFlowLayo
         setupCollectionView()
 
         searchBar.delegate = self
+        
+//        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addDetails))
 
     }
     
@@ -49,13 +51,13 @@ class MyPlantsViewController: UIViewController, UICollectionViewDelegateFlowLayo
         super.viewWillLayoutSubviews()
         setupCollectionViewItemSize()
         bordersContainerView()
-        setupColor()
+//        setupColor()
     }
     
-    func setupColor() {
+//    func setupColor() {
 //        searchBar.isTranslucent = false
 //        searchBar.barTintColor = UIColor(red: 0.96, green: 0.97, blue: 1.00, alpha: 1.00)
-    }
+//    }
     
     private func bordersContainerView() {
         containerView.layer.cornerRadius = 20
@@ -90,6 +92,48 @@ class MyPlantsViewController: UIViewController, UICollectionViewDelegateFlowLayo
             myPlantsCV.setCollectionViewLayout(collectionViewFlowLayout, animated: true)
         }
     }
+    
+//    @objc func addDetails() {
+//
+//        let detailVC = MyViewController()
+//        detailVC.delegate = self
+//        detailVC.mode = .add
+//        navigationController?.pushViewController(detailVC, animated: true)
+//    }
+//
+//    func add(record: MyData) {
+//
+//        array.append(record)
+//        array.sort { $0.name < $1.name }
+//        collectionView?.reloadData()
+//    }
+//
+//    func modify(record: MyData) {
+//
+//        let indexPath = collectionView?.indexPathsForSelectedItems
+//
+//        array.remove(at: indexPath![0].row)
+//        array.append(record)
+//        array.sort { $0.name < $1.name }
+//        collectionView?.reloadData()
+//    }
+//
+//
+//    // MARK: UICollectionViewDataSource
+//
+//    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 1
+//    }
+//
+//    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//
+//        let detailVC = MyViewController()
+//        detailVC.delegate = self
+//        detailVC.mode = .edit
+//        detailVC.record = array[indexPath.row]
+//        navigationController?.pushViewController(detailVC, animated: true)
+//    }
 }
 
 extension MyPlantsViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -113,7 +157,6 @@ extension MyPlantsViewController: UICollectionViewDelegate, UICollectionViewData
         
         if isSearching {
             card.plantName.text = filtered[indexPath.item].plantName
-            // cell.nameLabel.text = filtered[indexPath.row].name
         } else {
             card.plantName.text = items[indexPath.item].plantName
         }
