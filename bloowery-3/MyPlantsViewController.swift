@@ -13,7 +13,9 @@ struct Item {
     var plantName: String
 }
 
-class MyPlantsViewController: UIViewController, UISearchBarDelegate {
+fileprivate let searchBarHeight: Int = 40
+
+class MyPlantsViewController: UIViewController, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var containerView: UIView!
     
@@ -26,30 +28,21 @@ class MyPlantsViewController: UIViewController, UISearchBarDelegate {
     
     @IBOutlet weak var myPlantsCV: UICollectionView!
     
-//    @IBOutlet weak var searchBarPlaceholder: UIView!
-    
     var items: [Item] = [Item(imageName: "Ficus", plantName: "Степуша"), Item(imageName: "Succulent", plantName: "Хавроша"), Item(imageName: "Maranta", plantName: "Мара")]
     
     var collectionViewFlowLayout: UICollectionViewFlowLayout!
     
     let cellIdentifier = "PlantCollectionViewCell"
     
-//    var filteredData: [String]!
-    var filteredData = [Item]()
-    var searchActive = false
-    
-    var searchController: UISearchController!
+    var filtered: [Item] = []
+    var isSearching: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
+
         searchBar.delegate = self
-        filteredData = items
-//
-//        searchController.searchBar.sizeToFit()
-//        searchBarPlaceholder.addSubview(searchController.searchBar)
-//        automaticallyAdjustsScrollViewInsets = false
-//        definesPresentationContext = true
+
     }
     
     override func viewWillLayoutSubviews() {
@@ -60,8 +53,8 @@ class MyPlantsViewController: UIViewController, UISearchBarDelegate {
     }
     
     func setupColor() {
-        searchBar.isTranslucent = false
-        searchBar.barTintColor = UIColor(red: 0.96, green: 0.97, blue: 1.00, alpha: 1.00)
+//        searchBar.isTranslucent = false
+//        searchBar.barTintColor = UIColor(red: 0.96, green: 0.97, blue: 1.00, alpha: 1.00)
     }
     
     private func bordersContainerView() {
@@ -97,35 +90,15 @@ class MyPlantsViewController: UIViewController, UISearchBarDelegate {
             myPlantsCV.setCollectionViewLayout(collectionViewFlowLayout, animated: true)
         }
     }
-    
-//    search bar function
-//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-//        // When there is no text, filteredData is the same as the original data
-//        // When user has entered text into the search box
-//        // Use the filter method to iterate over all items in the data array
-//        // For each item, return true if the item should be included and false if the
-//        // item should NOT be included
-//        filteredData = searchText.isEmpty ? items : items.filter { (item: String) -> Bool in
-//            // If dataItem matches the searchText, return true to include it
-//            return item.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
-//        }
-//
-//        myPlantsCV.reloadData()
-//    }
-    
-    func searchBar(searchText: String) {
-        filteredData = items.filter { (item) -> Bool in
-            return item.plantName.range(of: searchText, options: [ .caseInsensitive ]) != nil
-        }
-
-        searchActive = !filteredData.isEmpty
-
-        myPlantsCV.reloadData()
-    }
 }
 
 extension MyPlantsViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        if isSearching {
+            return filtered.count
+        }
+    
         return items.count
     }
     
@@ -138,6 +111,12 @@ extension MyPlantsViewController: UICollectionViewDelegate, UICollectionViewData
         card.layer.cornerRadius = 5
         card.layer.masksToBounds = true
         
+        if isSearching {
+            card.plantName.text = filtered[indexPath.item].plantName
+            // cell.nameLabel.text = filtered[indexPath.row].name
+        } else {
+            card.plantName.text = items[indexPath.item].plantName
+        }
         
         return card
     }

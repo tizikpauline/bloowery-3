@@ -25,6 +25,7 @@
 		43D766BC2455F3E300CF790A /* SwiftnGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D766BB2455F3E300CF790A /* SwiftnGif.swift */; };
 		43D766BE2455F48400CF790A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D766BD2455F48400CF790A /* SplashViewController.swift */; };
 		43D766C02455F61200CF790A /* animation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 43D766BF2455F61200CF790A /* animation.gif */; };
+		43F613742456A42A00BA987D /* MyCollView+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F613732456A42A00BA987D /* MyCollView+Search.swift */; };
 		6D4C78FBF55B8B57B9C2F4F9 /* Pods_bloowery_3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50AEDBD86F8E369510ADED9C /* Pods_bloowery_3.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		43D766BB2455F3E300CF790A /* SwiftnGif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftnGif.swift; sourceTree = "<group>"; };
 		43D766BD2455F48400CF790A /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		43D766BF2455F61200CF790A /* animation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = animation.gif; sourceTree = "<group>"; };
+		43F613732456A42A00BA987D /* MyCollView+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyCollView+Search.swift"; sourceTree = "<group>"; };
 		50AEDBD86F8E369510ADED9C /* Pods_bloowery_3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bloowery_3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3385265DD40836FD4CB865 /* Pods-bloowery-3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bloowery-3.debug.xcconfig"; path = "Target Support Files/Pods-bloowery-3/Pods-bloowery-3.debug.xcconfig"; sourceTree = "<group>"; };
 		E19AC3AF54416287E3C2E805 /* Pods-bloowery-3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bloowery-3.release.xcconfig"; path = "Target Support Files/Pods-bloowery-3/Pods-bloowery-3.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				43AC56CD2455D17300F8F4C4 /* MyPlantsViewController.swift */,
 				43AC56CF2455D1A500F8F4C4 /* DiagnosticViewController.swift */,
 				43AC56BD2455D08E00F8F4C4 /* Main.storyboard */,
+				43F613732456A42A00BA987D /* MyCollView+Search.swift */,
 				43D766BD2455F48400CF790A /* SplashViewController.swift */,
 				43D766BB2455F3E300CF790A /* SwiftnGif.swift */,
 				43AC56D92455D2BD00F8F4C4 /* PlantCollectionViewCell.swift */,
@@ -252,6 +255,7 @@
 				43AC56B82455D08E00F8F4C4 /* AppDelegate.swift in Sources */,
 				43AC56D02455D1A500F8F4C4 /* DiagnosticViewController.swift in Sources */,
 				43AC56D32455D21600F8F4C4 /* TaskCollectionViewCell.swift in Sources */,
+				43F613742456A42A00BA987D /* MyCollView+Search.swift in Sources */,
 				43AC56CE2455D17300F8F4C4 /* MyPlantsViewController.swift in Sources */,
 				43D766BC2455F3E300CF790A /* SwiftnGif.swift in Sources */,
 				43AC56DB2455D2BD00F8F4C4 /* PlantCollectionViewCell.swift in Sources */,
