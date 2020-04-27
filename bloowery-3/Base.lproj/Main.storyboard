@@ -460,92 +460,128 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8tZ-vo-lCK">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8tZ-vo-lCK">
                                 <rect key="frame" x="0.0" y="84" width="414" height="812"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IYu-Rc-o1j">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IYu-Rc-o1j">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mh-K3-KCY">
-                                                <rect key="frame" x="24" y="180" width="162" height="26"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mh-K3-KCY">
+                                                <rect key="frame" x="20" y="180" width="162" height="26"/>
                                                 <state key="normal" title="Добавить фото" backgroundImage="Add Photo">
                                                     <color key="titleColor" red="0.96862745100000003" green="0.97647058819999999" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.77254901960784317" green="0.792156862745098" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="240" id="1gw-kj-hgh"/>
+                                            <constraint firstAttribute="width" constant="414" id="6z1-SU-nZH"/>
+                                            <constraint firstItem="2mh-K3-KCY" firstAttribute="leading" secondItem="IYu-Rc-o1j" secondAttribute="leading" constant="20" id="WrT-BW-SoA"/>
+                                            <constraint firstAttribute="bottom" secondItem="2mh-K3-KCY" secondAttribute="bottom" constant="34" id="csm-7e-ChQ"/>
+                                        </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Jp-ga-ug0">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Jp-ga-ug0">
                                         <rect key="frame" x="0.0" y="220" width="414" height="510"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNB-Kd-lpl">
-                                                <rect key="frame" x="23" y="15" width="34" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNB-Kd-lpl">
+                                                <rect key="frame" x="20" y="15" width="34" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="highlightedColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите текст" textAlignment="natural" minimumFontSize="17" background="input" translatesAutoresizingMaskIntoConstraints="NO" id="fka-Ee-R9s">
-                                                <rect key="frame" x="23" y="44" width="222" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="⠀Введите текст" clearsOnBeginEditing="YES" minimumFontSize="17" background="input" translatesAutoresizingMaskIntoConstraints="NO" id="fka-Ee-R9s">
+                                                <rect key="frame" x="20" y="44" width="225" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="4Wj-u3-L0L"/>
+                                                    <constraint firstAttribute="width" constant="225" id="kpn-aG-jLR"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" textContentType="name"/>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Сорт" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyy-Z9-bhI">
-                                                <rect key="frame" x="23" y="107" width="40" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сорт" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyy-Z9-bhI">
+                                                <rect key="frame" x="20" y="108" width="40" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="highlightedColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Выберите сорт" textAlignment="natural" minimumFontSize="17" background="input" translatesAutoresizingMaskIntoConstraints="NO" id="1Ku-5J-ury">
-                                                <rect key="frame" x="23" y="136" width="222" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="⠀Выберите сорт" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" background="input" translatesAutoresizingMaskIntoConstraints="NO" id="1Ku-5J-ury">
+                                                <rect key="frame" x="20" y="137" width="222" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="VJU-Qi-N6S"/>
+                                                    <constraint firstAttribute="width" constant="222" id="wPy-d3-MTD"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Дата посадки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLx-yK-g3T">
-                                                <rect key="frame" x="23" y="203" width="110" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата посадки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLx-yK-g3T">
+                                                <rect key="frame" x="20" y="201" width="110" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="highlightedColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите дату посадки" textAlignment="natural" minimumFontSize="17" background="input" translatesAutoresizingMaskIntoConstraints="NO" id="ghL-vD-2Uk">
-                                                <rect key="frame" x="23" y="232" width="222" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="⠀Введите дату посадки" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" background="input" translatesAutoresizingMaskIntoConstraints="NO" id="ghL-vD-2Uk">
+                                                <rect key="frame" x="20" y="230" width="222" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="QXC-7I-7mg"/>
+                                                    <constraint firstAttribute="width" constant="222" id="tlH-dq-fhM"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Период удобрения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUN-na-EPA">
-                                                <rect key="frame" x="23" y="305" width="153" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Период удобрения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUN-na-EPA">
+                                                <rect key="frame" x="20" y="294" width="153" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="highlightedColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Начало периода" textAlignment="natural" minimumFontSize="17" background="input" translatesAutoresizingMaskIntoConstraints="NO" id="iQE-hq-cal">
-                                                <rect key="frame" x="23" y="334" width="222" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="⠀Конец периода" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" background="input" translatesAutoresizingMaskIntoConstraints="NO" id="14d-gK-qMK">
+                                                <rect key="frame" x="20" y="365" width="222" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="222" id="WO5-qy-t7w"/>
+                                                    <constraint firstAttribute="height" constant="34" id="tYf-Jx-wBs"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Конец периода" textAlignment="natural" minimumFontSize="17" background="input" translatesAutoresizingMaskIntoConstraints="NO" id="14d-gK-qMK">
-                                                <rect key="frame" x="23" y="376" width="222" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="⠀Начало периода" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" background="input" translatesAutoresizingMaskIntoConstraints="NO" id="iQE-hq-cal">
+                                                <rect key="frame" x="20" y="323" width="222" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="222" id="rTW-nL-EZU"/>
+                                                    <constraint firstAttribute="height" constant="34" id="xak-0c-PCw"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="14d-gK-qMK" firstAttribute="leading" secondItem="6Jp-ga-ug0" secondAttribute="leading" constant="20" id="2US-bb-lBi"/>
+                                            <constraint firstItem="ghL-vD-2Uk" firstAttribute="leading" secondItem="6Jp-ga-ug0" secondAttribute="leading" constant="20" id="2qL-pr-tbL"/>
+                                            <constraint firstItem="14d-gK-qMK" firstAttribute="top" secondItem="iQE-hq-cal" secondAttribute="bottom" constant="8" id="6FA-WZ-sqB"/>
+                                            <constraint firstItem="uLx-yK-g3T" firstAttribute="top" secondItem="1Ku-5J-ury" secondAttribute="bottom" constant="30" id="6Rh-5e-4h4"/>
+                                            <constraint firstItem="fka-Ee-R9s" firstAttribute="top" secondItem="rNB-Kd-lpl" secondAttribute="bottom" constant="8" id="88C-F5-Ygr"/>
+                                            <constraint firstItem="uLx-yK-g3T" firstAttribute="leading" secondItem="6Jp-ga-ug0" secondAttribute="leading" constant="20" id="94F-Ja-zab"/>
+                                            <constraint firstItem="SUN-na-EPA" firstAttribute="leading" secondItem="6Jp-ga-ug0" secondAttribute="leading" constant="20" id="BGL-8I-4jc"/>
+                                            <constraint firstItem="iQE-hq-cal" firstAttribute="leading" secondItem="6Jp-ga-ug0" secondAttribute="leading" constant="20" id="Ddm-ao-d3q"/>
+                                            <constraint firstItem="ghL-vD-2Uk" firstAttribute="top" secondItem="uLx-yK-g3T" secondAttribute="bottom" constant="8" id="DkI-bx-xTa"/>
+                                            <constraint firstItem="Lyy-Z9-bhI" firstAttribute="leading" secondItem="6Jp-ga-ug0" secondAttribute="leading" constant="20" id="Gia-o7-lG5"/>
+                                            <constraint firstItem="1Ku-5J-ury" firstAttribute="top" secondItem="Lyy-Z9-bhI" secondAttribute="bottom" constant="8" id="VZC-fv-qEs"/>
+                                            <constraint firstItem="1Ku-5J-ury" firstAttribute="leading" secondItem="6Jp-ga-ug0" secondAttribute="leading" constant="20" id="Vpp-BL-H5a"/>
+                                            <constraint firstItem="Lyy-Z9-bhI" firstAttribute="top" secondItem="fka-Ee-R9s" secondAttribute="bottom" constant="30" id="aai-gZ-cGQ"/>
+                                            <constraint firstItem="rNB-Kd-lpl" firstAttribute="top" secondItem="6Jp-ga-ug0" secondAttribute="top" constant="15" id="got-y3-M1X"/>
+                                            <constraint firstItem="SUN-na-EPA" firstAttribute="top" secondItem="ghL-vD-2Uk" secondAttribute="bottom" constant="30" id="i11-Cd-Gs5"/>
+                                            <constraint firstItem="rNB-Kd-lpl" firstAttribute="leading" secondItem="6Jp-ga-ug0" secondAttribute="leading" constant="20" id="ikK-Xt-Kvv"/>
+                                            <constraint firstItem="fka-Ee-R9s" firstAttribute="leading" secondItem="6Jp-ga-ug0" secondAttribute="leading" constant="20" id="q9f-3b-hmC"/>
+                                            <constraint firstItem="iQE-hq-cal" firstAttribute="top" secondItem="SUN-na-EPA" secondAttribute="bottom" constant="8" id="ttq-SJ-83O"/>
+                                        </constraints>
                                     </view>
-                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M6j-Yd-Zzl">
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M6j-Yd-Zzl">
                                         <rect key="frame" x="0.0" y="730" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="P2e-FW-JfT"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="bI0-pp-XdX"/>
+                                        </constraints>
                                         <items>
                                             <barButtonItem title="Item" image="Today-Active" id="vli-oV-CtR">
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -567,17 +603,27 @@
                                     </toolbar>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="6Jp-ga-ug0" firstAttribute="leading" secondItem="8tZ-vo-lCK" secondAttribute="leading" id="4rs-dc-hfL"/>
+                                    <constraint firstAttribute="bottom" secondItem="M6j-Yd-Zzl" secondAttribute="bottom" constant="38" id="Igc-pp-FlR"/>
+                                    <constraint firstItem="6Jp-ga-ug0" firstAttribute="top" secondItem="8tZ-vo-lCK" secondAttribute="top" constant="220" id="b35-9P-4gk"/>
+                                    <constraint firstAttribute="trailing" secondItem="IYu-Rc-o1j" secondAttribute="trailing" id="bSS-We-crZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Jp-ga-ug0" secondAttribute="trailing" id="gOp-Jj-4Wo"/>
+                                    <constraint firstItem="M6j-Yd-Zzl" firstAttribute="leading" secondItem="8tZ-vo-lCK" secondAttribute="leading" id="pAh-aJ-R9e"/>
+                                    <constraint firstItem="M6j-Yd-Zzl" firstAttribute="top" secondItem="6Jp-ga-ug0" secondAttribute="bottom" id="pIt-I5-wB2"/>
+                                    <constraint firstItem="IYu-Rc-o1j" firstAttribute="leading" secondItem="8tZ-vo-lCK" secondAttribute="leading" id="rnj-rr-bRx"/>
+                                    <constraint firstAttribute="trailing" secondItem="M6j-Yd-Zzl" secondAttribute="trailing" id="s77-6k-rqq"/>
+                                    <constraint firstItem="IYu-Rc-o1j" firstAttribute="top" secondItem="8tZ-vo-lCK" secondAttribute="top" id="stV-E4-dsp"/>
+                                </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Новое растение" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2g-RL-CiY">
-                                <rect key="frame" x="140" y="44" width="137" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Новое растение" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2g-RL-CiY">
+                                <rect key="frame" x="138.5" y="44" width="137" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2Y-iF-dyt">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2Y-iF-dyt">
                                 <rect key="frame" x="20" y="44" width="45" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Назад">
                                     <color key="titleColor" red="0.57647058823529407" green="0.61568627450980395" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -585,15 +631,26 @@
                                     <action selector="close" destination="jtL-nM-0jD" eventType="touchUpInside" id="PbH-TC-XvV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0U-27-Z7g">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0U-27-Z7g">
                                 <rect key="frame" x="349" y="44" width="45" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Далее">
                                     <color key="titleColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96862745100000003" green="0.97647058819999999" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8tZ-vo-lCK" firstAttribute="trailing" secondItem="8Dm-ae-Tmf" secondAttribute="trailing" id="5NZ-fe-P5y"/>
+                            <constraint firstAttribute="bottom" secondItem="8tZ-vo-lCK" secondAttribute="bottom" id="8mn-ta-CTD"/>
+                            <constraint firstItem="o0U-27-Z7g" firstAttribute="top" secondItem="8Dm-ae-Tmf" secondAttribute="top" id="CQO-Q3-d5U"/>
+                            <constraint firstItem="W2Y-iF-dyt" firstAttribute="top" secondItem="8Dm-ae-Tmf" secondAttribute="top" id="KuK-HP-xsK"/>
+                            <constraint firstItem="8Dm-ae-Tmf" firstAttribute="trailing" secondItem="o0U-27-Z7g" secondAttribute="trailing" constant="20" id="MyG-Hb-rdM"/>
+                            <constraint firstItem="W2Y-iF-dyt" firstAttribute="leading" secondItem="8Dm-ae-Tmf" secondAttribute="leading" constant="20" id="V3u-zx-ZqV"/>
+                            <constraint firstItem="8tZ-vo-lCK" firstAttribute="leading" secondItem="8Dm-ae-Tmf" secondAttribute="leading" id="dqd-Cx-edN"/>
+                            <constraint firstItem="k2g-RL-CiY" firstAttribute="top" secondItem="8Dm-ae-Tmf" secondAttribute="top" id="fkK-wX-iiH"/>
+                            <constraint firstItem="k2g-RL-CiY" firstAttribute="centerX" secondItem="Fou-Sz-8st" secondAttribute="centerX" id="iL2-ok-80I"/>
+                            <constraint firstItem="8tZ-vo-lCK" firstAttribute="top" secondItem="k2g-RL-CiY" secondAttribute="bottom" constant="18" id="nMx-ee-Yty"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8Dm-ae-Tmf"/>
                     </view>
                     <toolbarItems/>
