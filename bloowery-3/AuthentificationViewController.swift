@@ -1,25 +1,33 @@
 //
-//  SplashViewController.swift
+//  AuthentificationViewController.swift
 //  bloowery-3
 //
-//  Created by Полина Тизик on 26.04.2020.
+//  Created by Полина Тизик on 13.05.2020.
 //  Copyright © 2020 Полина Тизик. All rights reserved.
 //
 
 import UIKit
+import FirebaseAuth
 
-class SplashViewController: UIViewController {
+class AuthentificationViewController: UIViewController {
+
+    @IBOutlet weak var signUpButton: UIButton!
     
-    @IBOutlet weak var GifView: UIImageView!
+    @IBOutlet weak var loginButton: UIButton!
+    
+    @IBOutlet weak var logoImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        //GifView.loadGif(name: "animation")
+        setUpElements()
     }
     
+    func setUpElements() {
+        Utilities.styleFilledButton(signUpButton)
+        Utilities.styleHollowButton(loginButton)
+    }
 
     /*
     // MARK: - Navigation

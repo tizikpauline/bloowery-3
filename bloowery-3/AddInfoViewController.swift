@@ -1,23 +1,27 @@
 //
-//  SplashViewController.swift
+//  HomeViewController.swift
 //  bloowery-3
 //
-//  Created by Полина Тизик on 26.04.2020.
+//  Created by Полина Тизик on 13.05.2020.
 //  Copyright © 2020 Полина Тизик. All rights reserved.
 //
 
 import UIKit
 
-class SplashViewController: UIViewController {
+class AddInfoViewController: UIViewController {
     
-    @IBOutlet weak var GifView: UIImageView!
+    @IBOutlet weak var infoLabel: UILabel!
+    
+    @IBOutlet weak var bioTextField: UITextField!
+    
+    @IBOutlet weak var nextButton: UIButton!
+    
+    @IBOutlet weak var skipButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        //GifView.loadGif(name: "animation")
     }
     
 

@@ -11,6 +11,7 @@ target 'bloowery-3' do
   # https://firebase.google.com/docs/ios/setup#available-pods
   # Pods for bloowery-3
   pod 'Firebase/Firestore'
+  pod 'Firebase/Auth'
 
   # Optionally, include the Swift extensions if you're using Swift.
   pod 'FirebaseFirestoreSwift'
