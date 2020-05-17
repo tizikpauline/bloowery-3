@@ -32,7 +32,6 @@
 		43AC56DC2455D2BD00F8F4C4 /* PlantCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC56DA2455D2BD00F8F4C4 /* PlantCollectionViewCell.xib */; };
 		43AC56E02455D52900F8F4C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43AC56DF2455D52900F8F4C4 /* GoogleService-Info.plist */; };
 		43CD6933246D2B9300E53FB9 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CD6932246D2B9300E53FB9 /* Utilities.swift */; };
-		43D766BE2455F48400CF790A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D766BD2455F48400CF790A /* SplashViewController.swift */; };
 		43F613742456A42A00BA987D /* MyCollView+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F613732456A42A00BA987D /* MyCollView+Search.swift */; };
 		6D4C78FBF55B8B57B9C2F4F9 /* Pods_bloowery_3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50AEDBD86F8E369510ADED9C /* Pods_bloowery_3.framework */; };
 /* End PBXBuildFile section */
@@ -65,7 +64,6 @@
 		43AC56DA2455D2BD00F8F4C4 /* PlantCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlantCollectionViewCell.xib; sourceTree = "<group>"; };
 		43AC56DF2455D52900F8F4C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		43CD6932246D2B9300E53FB9 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		43D766BD2455F48400CF790A /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		43F613732456A42A00BA987D /* MyCollView+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyCollView+Search.swift"; sourceTree = "<group>"; };
 		50AEDBD86F8E369510ADED9C /* Pods_bloowery_3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bloowery_3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3385265DD40836FD4CB865 /* Pods-bloowery-3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bloowery-3.debug.xcconfig"; path = "Target Support Files/Pods-bloowery-3/Pods-bloowery-3.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,7 +125,6 @@
 				43CD6932246D2B9300E53FB9 /* Utilities.swift */,
 				438A4815246C127300F357A4 /* SignUpViewController.swift */,
 				43F613732456A42A00BA987D /* MyCollView+Search.swift */,
-				43D766BD2455F48400CF790A /* SplashViewController.swift */,
 				43AC56D92455D2BD00F8F4C4 /* PlantCollectionViewCell.swift */,
 				43AC56DA2455D2BD00F8F4C4 /* PlantCollectionViewCell.xib */,
 				43AC56D12455D21600F8F4C4 /* TaskCollectionViewCell.swift */,
@@ -292,7 +289,6 @@
 				438A481C246C17C100F357A4 /* AuthentificationViewController.swift in Sources */,
 				438A4816246C127300F357A4 /* SignUpViewController.swift in Sources */,
 				4352C4BE24714AA5002D97D0 /* ProfileCollectionViewCell.swift in Sources */,
-				43D766BE2455F48400CF790A /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

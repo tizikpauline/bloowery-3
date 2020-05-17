@@ -43,6 +43,12 @@ class AddInfoViewController: UIViewController {
         transitionToProfilePage()
     }
     
+    @IBAction func nextButtonTapped(_ sender: Any) {
+        transitionToProfilePage()
+    }
+    
+    
+    
     func transitionToProfilePage() {
         let profileViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.profileViewController) as? ProfileViewController
         

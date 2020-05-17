@@ -49,6 +49,9 @@ class SignUpViewController: UIViewController {
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
         Utilities.styleFilledButton(signUpButton)
+        
+//        Secure password
+        passwordTextField.isSecureTextEntry = true
     }
     
 //    Transition to login page
