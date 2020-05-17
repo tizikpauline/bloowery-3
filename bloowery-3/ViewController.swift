@@ -77,9 +77,9 @@ class ViewController: UIViewController {
         db.collection("diseases").document("disease3").setData(["name":"Серая гниль", "id":"fungal", "photo":"10293.jpg", "symptom":"Серый пушистый налет на листьях и стеблях"])
         
         // Add new documents to the Users collection
-        db.collection("users").document("user1").setData(["name":"Дарья", "bio":"Работаю в Рамблере и люблю друзей", "photo":"12egwg2.jpg", "plants":"plant1, plant2, plant3"])
-        db.collection("users").document("user2").setData(["name":"Мария", "bio":"Фикусы моя жизнь!", "photo":"frewg.jpg", "plants":"plant3, plant4"])
-        db.collection("users").document("user3").setData(["name":"Костя", "bio":"Не очень разбираюсь во всем, кроме еды", "photo":"egtsga13.jpg", "plants":"plant1, plant2"])
+//        db.collection("users").document("user1").setData(["name":"Дарья", "bio":"Работаю в Рамблере и люблю друзей", "photo":"12egwg2.jpg", "plants":"plant1, plant2, plant3"])
+//        db.collection("users").document("user2").setData(["name":"Мария", "bio":"Фикусы моя жизнь!", "photo":"frewg.jpg", "plants":"plant3, plant4"])
+//        db.collection("users").document("user3").setData(["name":"Костя", "bio":"Не очень разбираюсь во всем, кроме еды", "photo":"egtsga13.jpg", "plants":"plant1, plant2"])
         
         // Add new documents to the Tips collection
         db.collection("tips").document("tip1").setData(["name":"Как не убить фикус", "id": "watering", "text":"Расскажем вам...", "photo":"1g3qg.jpg"])

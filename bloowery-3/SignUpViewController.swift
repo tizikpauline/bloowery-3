@@ -26,6 +26,8 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet weak var errorLabel: UILabel!
     
+    @IBOutlet weak var questionLabel: UILabel!
+    
     @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
@@ -89,7 +91,7 @@ class SignUpViewController: UIViewController {
             let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
-//            Create the user
+// Create the user
             Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
                 
                 // check for errors
@@ -110,7 +112,7 @@ class SignUpViewController: UIViewController {
                         }
                     }
                     
-                    //        transition to the home screen
+                    // transition to the home screen
                     self.transitionToHome()
                     
                 }
@@ -126,9 +128,9 @@ class SignUpViewController: UIViewController {
     }
     
     func transitionToHome() {
-        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? ViewController
+        let addInfoViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.addInfoViewController) as? AddInfoViewController
         
-        view.window?.rootViewController = homeViewController
+        view.window?.rootViewController = addInfoViewController
         view.window?.makeKeyAndVisible()
     }
     

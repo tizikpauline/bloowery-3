@@ -23,6 +23,8 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var signUpButton: UIButton!
     
+    @IBOutlet weak var questionLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -66,7 +68,7 @@ class LoginViewController: UIViewController {
                     return "Пожалуйста, удостоверьтесь, что ваш пароль состоит минимум из 8 символов и содержит специальные символы и цифры."
                 }
                 return nil
-            }
+        }
         
 //        Create cleaned versions of the text field
         let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		431CF9CD246EE21500E329BD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431CF9CC246EE21500E329BD /* ProfileViewController.swift */; };
+		4352C4BE24714AA5002D97D0 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4352C4BC24714AA5002D97D0 /* ProfileCollectionViewCell.swift */; };
+		4352C4BF24714AA5002D97D0 /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4352C4BD24714AA5002D97D0 /* ProfileCollectionViewCell.xib */; };
 		43594033246DA5CE00E74DBC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43594032246DA5CE00E74DBC /* Constants.swift */; };
 		4374C2952456BB9400164AA1 /* NewPlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4374C2942456BB9400164AA1 /* NewPlantViewController.swift */; };
 		438A4816246C127300F357A4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A4815246C127300F357A4 /* SignUpViewController.swift */; };
@@ -35,6 +38,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		431CF9CC246EE21500E329BD /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4352C4BC24714AA5002D97D0 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		4352C4BD24714AA5002D97D0 /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
 		43594032246DA5CE00E74DBC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4374C2942456BB9400164AA1 /* NewPlantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlantViewController.swift; sourceTree = "<group>"; };
 		438A4815246C127300F357A4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +119,8 @@
 				43AC56CD2455D17300F8F4C4 /* MyPlantsViewController.swift */,
 				43AC56CF2455D1A500F8F4C4 /* DiagnosticViewController.swift */,
 				43AC56BD2455D08E00F8F4C4 /* Main.storyboard */,
+				4352C4BC24714AA5002D97D0 /* ProfileCollectionViewCell.swift */,
+				4352C4BD24714AA5002D97D0 /* ProfileCollectionViewCell.xib */,
 				43594032246DA5CE00E74DBC /* Constants.swift */,
 				4374C2942456BB9400164AA1 /* NewPlantViewController.swift */,
 				438A481B246C17C100F357A4 /* AuthentificationViewController.swift */,
@@ -128,6 +136,7 @@
 				43AC56D62455D24800F8F4C4 /* TaskCollectionViewCell2.xib */,
 				438A4817246C129900F357A4 /* LoginViewController.swift */,
 				438A4819246C12B000F357A4 /* AddInfoViewController.swift */,
+				431CF9CC246EE21500E329BD /* ProfileViewController.swift */,
 				43AC56DF2455D52900F8F4C4 /* GoogleService-Info.plist */,
 				43AC56C02455D08F00F8F4C4 /* Assets.xcassets */,
 				43AC56C22455D08F00F8F4C4 /* LaunchScreen.storyboard */,
@@ -211,6 +220,7 @@
 				43AC56C12455D08F00F8F4C4 /* Assets.xcassets in Resources */,
 				43AC56DC2455D2BD00F8F4C4 /* PlantCollectionViewCell.xib in Resources */,
 				43AC56BF2455D08E00F8F4C4 /* Main.storyboard in Resources */,
+				4352C4BF24714AA5002D97D0 /* ProfileCollectionViewCell.xib in Resources */,
 				43AC56E02455D52900F8F4C4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +280,7 @@
 				43AC56BC2455D08E00F8F4C4 /* ViewController.swift in Sources */,
 				43AC56B82455D08E00F8F4C4 /* AppDelegate.swift in Sources */,
 				4374C2952456BB9400164AA1 /* NewPlantViewController.swift in Sources */,
+				431CF9CD246EE21500E329BD /* ProfileViewController.swift in Sources */,
 				438A481A246C12B000F357A4 /* AddInfoViewController.swift in Sources */,
 				43CD6933246D2B9300E53FB9 /* Utilities.swift in Sources */,
 				43AC56D02455D1A500F8F4C4 /* DiagnosticViewController.swift in Sources */,
@@ -280,6 +291,7 @@
 				43AC56BA2455D08E00F8F4C4 /* SceneDelegate.swift in Sources */,
 				438A481C246C17C100F357A4 /* AuthentificationViewController.swift in Sources */,
 				438A4816246C127300F357A4 /* SignUpViewController.swift in Sources */,
+				4352C4BE24714AA5002D97D0 /* ProfileCollectionViewCell.swift in Sources */,
 				43D766BE2455F48400CF790A /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

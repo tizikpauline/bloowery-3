@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
 
 class AddInfoViewController: UIViewController {
     
@@ -20,19 +22,32 @@ class AddInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpElements()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setUpElements() {
+    //        Hide the error label
+            
+//            errorLabel.alpha = 0
+            
+    //        Style the elements
+            
+            Utilities.styleTextField(bioTextField)
+            Utilities.styleFilledButton(nextButton)
+            Utilities.styleHollowButton(skipButton)
+        }
+    
+    @IBAction func skipButtonTapped(_ sender: Any) {
+        transitionToProfilePage()
     }
-    */
+    
+    func transitionToProfilePage() {
+        let profileViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.profileViewController) as? ProfileViewController
+        
+        view.window?.rootViewController = profileViewController
+        view.window?.makeKeyAndVisible()
+    }
 
 }

@@ -17,6 +17,8 @@ class AuthentificationViewController: UIViewController {
     
     @IBOutlet weak var logoImage: UIImageView!
     
+    @IBOutlet weak var welcomeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
