@@ -157,7 +157,7 @@
                                     <barButtonItem title="Item" image="Profile-Inactive" id="LsC-WT-EbH">
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <segue destination="RgJ-fj-yrt" kind="presentation" modalPresentationStyle="fullScreen" id="jW7-XU-l9n"/>
+                                            <segue destination="RgJ-fj-yrt" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="jW7-XU-l9n"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -282,7 +282,7 @@
                                     <barButtonItem title="Item" image="Profile-Inactive" id="cm9-La-ldc">
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <segue destination="RgJ-fj-yrt" kind="presentation" modalPresentationStyle="fullScreen" id="tSg-fS-DuH"/>
+                                            <segue destination="RgJ-fj-yrt" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="tSg-fS-DuH"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -335,62 +335,65 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yXS-rF-PRA">
-                                <rect key="frame" x="77" y="280.5" width="260" height="335.5"/>
+                                <rect key="frame" x="87" y="400.5" width="240" height="95.5"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app logo login" translatesAutoresizingMaskIntoConstraints="NO" id="gbl-aH-OFU">
-                                        <rect key="frame" x="0.0" y="0.0" width="260" height="170"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="170" id="nAL-nB-XTi"/>
-                                        </constraints>
-                                    </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="vYd-Zf-2ME">
-                                        <rect key="frame" x="0.0" y="170" width="260" height="165.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="vYd-Zf-2ME">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="95.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добро пожаловать в Bloowery!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rG-QN-FHK">
-                                                <rect key="frame" x="0.0" y="0.0" width="260" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добро пожаловать в" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rG-QN-FHK">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.59215686274509804" green="0.59607843137254901" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="gf7-Me-Fy0">
-                                                <rect key="frame" x="0.0" y="50.5" width="260" height="115"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gH0-Re-qFB">
-                                                        <rect key="frame" x="0.0" y="0.0" width="260" height="50"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="260" id="jz6-b4-7kD"/>
-                                                            <constraint firstAttribute="height" constant="50" id="r0q-cW-p4S"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                                        <state key="normal" title="Зарегистрироваться"/>
-                                                        <connections>
-                                                            <segue destination="1cd-KI-hBZ" kind="show" id="tCt-Up-VnL"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaT-5C-Sev">
-                                                        <rect key="frame" x="0.0" y="65" width="260" height="50"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="50" id="dNB-Jl-wed"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                                        <state key="normal" title="Войти"/>
-                                                        <connections>
-                                                            <segue destination="sIo-6I-P4e" kind="show" id="ZBN-Sw-bhj"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bloowery" translatesAutoresizingMaskIntoConstraints="NO" id="gbl-aH-OFU">
+                                                <rect key="frame" x="0.0" y="35.5" width="240" height="60"/>
                                                 <constraints>
-                                                    <constraint firstItem="qaT-5C-Sev" firstAttribute="width" secondItem="gH0-Re-qFB" secondAttribute="width" id="K29-8E-ckb"/>
+                                                    <constraint firstAttribute="width" constant="240" id="bHs-yy-DaB"/>
+                                                    <constraint firstAttribute="height" constant="60" id="vpV-JC-uRw"/>
                                                 </constraints>
-                                            </stackView>
+                                            </imageView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="gf7-Me-Fy0">
+                                <rect key="frame" x="77" y="732" width="260" height="115"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gH0-Re-qFB">
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="260" id="jz6-b4-7kD"/>
+                                            <constraint firstAttribute="height" constant="50" id="r0q-cW-p4S"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <state key="normal" title="Зарегистрироваться"/>
+                                        <connections>
+                                            <segue destination="1cd-KI-hBZ" kind="show" id="tCt-Up-VnL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaT-5C-Sev">
+                                        <rect key="frame" x="0.0" y="65" width="260" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="dNB-Jl-wed"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <state key="normal" title="Войти"/>
+                                        <connections>
+                                            <segue destination="sIo-6I-P4e" kind="show" id="ZBN-Sw-bhj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qaT-5C-Sev" firstAttribute="width" secondItem="gH0-Re-qFB" secondAttribute="width" id="K29-8E-ckb"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="N9F-f4-ziv" firstAttribute="bottom" secondItem="gf7-Me-Fy0" secondAttribute="bottom" constant="15" id="3ud-rJ-nMI"/>
                             <constraint firstItem="yXS-rF-PRA" firstAttribute="centerX" secondItem="JJu-yG-6cT" secondAttribute="centerX" id="65P-Ht-zQw"/>
+                            <constraint firstItem="gf7-Me-Fy0" firstAttribute="centerX" secondItem="JJu-yG-6cT" secondAttribute="centerX" id="ZX5-dH-tcR"/>
                             <constraint firstItem="yXS-rF-PRA" firstAttribute="centerY" secondItem="JJu-yG-6cT" secondAttribute="centerY" id="shn-xI-01b"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="N9F-f4-ziv"/>
@@ -513,7 +516,7 @@
                                     <barButtonItem title="Item" image="Profile-Inactive" id="TtS-5P-6zR">
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <segue destination="RgJ-fj-yrt" kind="presentation" modalPresentationStyle="fullScreen" id="AhK-Si-LBO"/>
+                                            <segue destination="RgJ-fj-yrt" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="AhK-Si-LBO"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -572,7 +575,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Jp-ga-ug0">
-                                        <rect key="frame" x="0.0" y="220" width="414" height="510"/>
+                                        <rect key="frame" x="0.0" y="220" width="414" height="592"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNB-Kd-lpl">
                                                 <rect key="frame" x="20" y="15" width="34" height="21"/>
@@ -581,64 +584,64 @@
                                                 <color key="highlightedColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите текст" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fka-Ee-R9s">
-                                                <rect key="frame" x="20" y="44" width="225" height="34"/>
+                                                <rect key="frame" x="20" y="44" width="225" height="40"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="34" id="4Wj-u3-L0L"/>
+                                                    <constraint firstAttribute="height" constant="40" id="4Wj-u3-L0L"/>
                                                     <constraint firstAttribute="width" constant="225" id="kpn-aG-jLR"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" textContentType="name"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сорт" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyy-Z9-bhI">
-                                                <rect key="frame" x="20" y="108" width="40" height="21"/>
+                                                <rect key="frame" x="20" y="114" width="40" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="highlightedColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Выберите сорт" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Ku-5J-ury">
-                                                <rect key="frame" x="20" y="137" width="222" height="34"/>
+                                                <rect key="frame" x="20" y="143" width="222" height="40"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="34" id="VJU-Qi-N6S"/>
+                                                    <constraint firstAttribute="height" constant="40" id="VJU-Qi-N6S"/>
                                                     <constraint firstAttribute="width" constant="222" id="wPy-d3-MTD"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата посадки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLx-yK-g3T">
-                                                <rect key="frame" x="20" y="201" width="110" height="21"/>
+                                                <rect key="frame" x="20" y="213" width="110" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="highlightedColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите дату посадки" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ghL-vD-2Uk">
-                                                <rect key="frame" x="20" y="230" width="222" height="34"/>
+                                                <rect key="frame" x="20" y="242" width="222" height="40"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="34" id="QXC-7I-7mg"/>
+                                                    <constraint firstAttribute="height" constant="40" id="QXC-7I-7mg"/>
                                                     <constraint firstAttribute="width" constant="222" id="tlH-dq-fhM"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Период удобрения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUN-na-EPA">
-                                                <rect key="frame" x="20" y="294" width="153" height="21"/>
+                                                <rect key="frame" x="20" y="312" width="153" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="highlightedColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Конец периода" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="14d-gK-qMK">
-                                                <rect key="frame" x="20" y="365" width="222" height="34"/>
+                                                <rect key="frame" x="20" y="389" width="222" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="222" id="WO5-qy-t7w"/>
-                                                    <constraint firstAttribute="height" constant="34" id="tYf-Jx-wBs"/>
+                                                    <constraint firstAttribute="height" constant="40" id="tYf-Jx-wBs"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Начало периода" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iQE-hq-cal">
-                                                <rect key="frame" x="20" y="323" width="222" height="34"/>
+                                                <rect key="frame" x="20" y="341" width="222" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="222" id="rTW-nL-EZU"/>
-                                                    <constraint firstAttribute="height" constant="34" id="xak-0c-PCw"/>
+                                                    <constraint firstAttribute="height" constant="40" id="xak-0c-PCw"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -666,43 +669,15 @@
                                             <constraint firstItem="iQE-hq-cal" firstAttribute="top" secondItem="SUN-na-EPA" secondAttribute="bottom" constant="8" id="ttq-SJ-83O"/>
                                         </constraints>
                                     </view>
-                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M6j-Yd-Zzl">
-                                        <rect key="frame" x="0.0" y="730" width="414" height="44"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="P2e-FW-JfT"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="bI0-pp-XdX"/>
-                                        </constraints>
-                                        <items>
-                                            <barButtonItem title="Item" image="Today-Active" id="vli-oV-CtR">
-                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </barButtonItem>
-                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="uaG-gs-5Or"/>
-                                            <barButtonItem title="My Plants" image="Plants-Inactive" id="75l-5E-VUS">
-                                                <color key="tintColor" red="0.16862745100000001" green="0.87450980389999999" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </barButtonItem>
-                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="uOf-xc-pwK"/>
-                                            <barButtonItem title="Item" image="Diagnostics-Inactive" id="pcj-SF-8tK">
-                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </barButtonItem>
-                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="9YB-B0-3Cl"/>
-                                            <barButtonItem title="Item" image="Profile-Inactive" id="Lm9-Rb-gqg">
-                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </barButtonItem>
-                                        </items>
-                                        <color key="barTintColor" red="0.96862745100000003" green="0.97647058819999999" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
-                                    </toolbar>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstItem="6Jp-ga-ug0" firstAttribute="leading" secondItem="8tZ-vo-lCK" secondAttribute="leading" id="4rs-dc-hfL"/>
-                                    <constraint firstAttribute="bottom" secondItem="M6j-Yd-Zzl" secondAttribute="bottom" constant="38" id="Igc-pp-FlR"/>
+                                    <constraint firstAttribute="bottom" secondItem="6Jp-ga-ug0" secondAttribute="bottom" id="91S-2F-1eK"/>
                                     <constraint firstItem="6Jp-ga-ug0" firstAttribute="top" secondItem="8tZ-vo-lCK" secondAttribute="top" constant="220" id="b35-9P-4gk"/>
                                     <constraint firstAttribute="trailing" secondItem="IYu-Rc-o1j" secondAttribute="trailing" id="bSS-We-crZ"/>
                                     <constraint firstAttribute="trailing" secondItem="6Jp-ga-ug0" secondAttribute="trailing" id="gOp-Jj-4Wo"/>
-                                    <constraint firstItem="M6j-Yd-Zzl" firstAttribute="leading" secondItem="8tZ-vo-lCK" secondAttribute="leading" id="pAh-aJ-R9e"/>
-                                    <constraint firstItem="M6j-Yd-Zzl" firstAttribute="top" secondItem="6Jp-ga-ug0" secondAttribute="bottom" id="pIt-I5-wB2"/>
                                     <constraint firstItem="IYu-Rc-o1j" firstAttribute="leading" secondItem="8tZ-vo-lCK" secondAttribute="leading" id="rnj-rr-bRx"/>
-                                    <constraint firstAttribute="trailing" secondItem="M6j-Yd-Zzl" secondAttribute="trailing" id="s77-6k-rqq"/>
                                     <constraint firstItem="IYu-Rc-o1j" firstAttribute="top" secondItem="8tZ-vo-lCK" secondAttribute="top" id="stV-E4-dsp"/>
                                 </constraints>
                             </view>
@@ -1219,6 +1194,6 @@
         <image name="Q_Input_Photo_Diagnostics" width="100.5" height="100.5"/>
         <image name="Round background" width="30" height="30.5"/>
         <image name="Today-Active" width="22.5" height="22.5"/>
-        <image name="app logo login" width="155" height="155.5"/>
+        <image name="bloowery" width="170" height="39"/>
     </resources>
 </document>
