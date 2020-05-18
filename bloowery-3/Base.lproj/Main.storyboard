@@ -584,64 +584,64 @@
                                                 <color key="highlightedColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите текст" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fka-Ee-R9s">
-                                                <rect key="frame" x="20" y="44" width="225" height="40"/>
+                                                <rect key="frame" x="20" y="46" width="375" height="45"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="4Wj-u3-L0L"/>
-                                                    <constraint firstAttribute="width" constant="225" id="kpn-aG-jLR"/>
+                                                    <constraint firstAttribute="height" constant="45" id="4Wj-u3-L0L"/>
+                                                    <constraint firstAttribute="width" constant="375" id="kpn-aG-jLR"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" textContentType="name"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сорт" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyy-Z9-bhI">
-                                                <rect key="frame" x="20" y="114" width="40" height="21"/>
+                                                <rect key="frame" x="20" y="121" width="40" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="highlightedColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Выберите сорт" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Ku-5J-ury">
-                                                <rect key="frame" x="20" y="143" width="222" height="40"/>
+                                                <rect key="frame" x="20" y="152" width="375" height="45"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="VJU-Qi-N6S"/>
-                                                    <constraint firstAttribute="width" constant="222" id="wPy-d3-MTD"/>
+                                                    <constraint firstAttribute="height" constant="45" id="VJU-Qi-N6S"/>
+                                                    <constraint firstAttribute="width" constant="375" id="wPy-d3-MTD"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата посадки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLx-yK-g3T">
-                                                <rect key="frame" x="20" y="213" width="110" height="21"/>
+                                                <rect key="frame" x="20" y="227" width="110" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="highlightedColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите дату посадки" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ghL-vD-2Uk">
-                                                <rect key="frame" x="20" y="242" width="222" height="40"/>
+                                                <rect key="frame" x="20" y="258" width="375" height="45"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="QXC-7I-7mg"/>
-                                                    <constraint firstAttribute="width" constant="222" id="tlH-dq-fhM"/>
+                                                    <constraint firstAttribute="height" constant="45" id="QXC-7I-7mg"/>
+                                                    <constraint firstAttribute="width" constant="375" id="tlH-dq-fhM"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Период удобрения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUN-na-EPA">
-                                                <rect key="frame" x="20" y="312" width="153" height="21"/>
+                                                <rect key="frame" x="20" y="333" width="153" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="highlightedColor" red="0.57647058819999997" green="0.61568627450000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Конец периода" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="14d-gK-qMK">
-                                                <rect key="frame" x="20" y="389" width="222" height="40"/>
+                                                <rect key="frame" x="20" y="424" width="375" height="45"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="222" id="WO5-qy-t7w"/>
-                                                    <constraint firstAttribute="height" constant="40" id="tYf-Jx-wBs"/>
+                                                    <constraint firstAttribute="width" constant="375" id="WO5-qy-t7w"/>
+                                                    <constraint firstAttribute="height" constant="45" id="tYf-Jx-wBs"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Начало периода" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iQE-hq-cal">
-                                                <rect key="frame" x="20" y="341" width="222" height="40"/>
+                                                <rect key="frame" x="20" y="364" width="375" height="45"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="222" id="rTW-nL-EZU"/>
-                                                    <constraint firstAttribute="height" constant="40" id="xak-0c-PCw"/>
+                                                    <constraint firstAttribute="width" constant="375" id="rTW-nL-EZU"/>
+                                                    <constraint firstAttribute="height" constant="45" id="xak-0c-PCw"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -651,22 +651,22 @@
                                         <constraints>
                                             <constraint firstItem="14d-gK-qMK" firstAttribute="leading" secondItem="6Jp-ga-ug0" secondAttribute="leading" constant="20" id="2US-bb-lBi"/>
                                             <constraint firstItem="ghL-vD-2Uk" firstAttribute="leading" secondItem="6Jp-ga-ug0" secondAttribute="leading" constant="20" id="2qL-pr-tbL"/>
-                                            <constraint firstItem="14d-gK-qMK" firstAttribute="top" secondItem="iQE-hq-cal" secondAttribute="bottom" constant="8" id="6FA-WZ-sqB"/>
+                                            <constraint firstItem="14d-gK-qMK" firstAttribute="top" secondItem="iQE-hq-cal" secondAttribute="bottom" constant="15" id="6FA-WZ-sqB"/>
                                             <constraint firstItem="uLx-yK-g3T" firstAttribute="top" secondItem="1Ku-5J-ury" secondAttribute="bottom" constant="30" id="6Rh-5e-4h4"/>
-                                            <constraint firstItem="fka-Ee-R9s" firstAttribute="top" secondItem="rNB-Kd-lpl" secondAttribute="bottom" constant="8" id="88C-F5-Ygr"/>
+                                            <constraint firstItem="fka-Ee-R9s" firstAttribute="top" secondItem="rNB-Kd-lpl" secondAttribute="bottom" constant="10" id="88C-F5-Ygr"/>
                                             <constraint firstItem="uLx-yK-g3T" firstAttribute="leading" secondItem="6Jp-ga-ug0" secondAttribute="leading" constant="20" id="94F-Ja-zab"/>
                                             <constraint firstItem="SUN-na-EPA" firstAttribute="leading" secondItem="6Jp-ga-ug0" secondAttribute="leading" constant="20" id="BGL-8I-4jc"/>
                                             <constraint firstItem="iQE-hq-cal" firstAttribute="leading" secondItem="6Jp-ga-ug0" secondAttribute="leading" constant="20" id="Ddm-ao-d3q"/>
-                                            <constraint firstItem="ghL-vD-2Uk" firstAttribute="top" secondItem="uLx-yK-g3T" secondAttribute="bottom" constant="8" id="DkI-bx-xTa"/>
+                                            <constraint firstItem="ghL-vD-2Uk" firstAttribute="top" secondItem="uLx-yK-g3T" secondAttribute="bottom" constant="10" id="DkI-bx-xTa"/>
                                             <constraint firstItem="Lyy-Z9-bhI" firstAttribute="leading" secondItem="6Jp-ga-ug0" secondAttribute="leading" constant="20" id="Gia-o7-lG5"/>
-                                            <constraint firstItem="1Ku-5J-ury" firstAttribute="top" secondItem="Lyy-Z9-bhI" secondAttribute="bottom" constant="8" id="VZC-fv-qEs"/>
+                                            <constraint firstItem="1Ku-5J-ury" firstAttribute="top" secondItem="Lyy-Z9-bhI" secondAttribute="bottom" constant="10" id="VZC-fv-qEs"/>
                                             <constraint firstItem="1Ku-5J-ury" firstAttribute="leading" secondItem="6Jp-ga-ug0" secondAttribute="leading" constant="20" id="Vpp-BL-H5a"/>
                                             <constraint firstItem="Lyy-Z9-bhI" firstAttribute="top" secondItem="fka-Ee-R9s" secondAttribute="bottom" constant="30" id="aai-gZ-cGQ"/>
                                             <constraint firstItem="rNB-Kd-lpl" firstAttribute="top" secondItem="6Jp-ga-ug0" secondAttribute="top" constant="15" id="got-y3-M1X"/>
                                             <constraint firstItem="SUN-na-EPA" firstAttribute="top" secondItem="ghL-vD-2Uk" secondAttribute="bottom" constant="30" id="i11-Cd-Gs5"/>
                                             <constraint firstItem="rNB-Kd-lpl" firstAttribute="leading" secondItem="6Jp-ga-ug0" secondAttribute="leading" constant="20" id="ikK-Xt-Kvv"/>
                                             <constraint firstItem="fka-Ee-R9s" firstAttribute="leading" secondItem="6Jp-ga-ug0" secondAttribute="leading" constant="20" id="q9f-3b-hmC"/>
-                                            <constraint firstItem="iQE-hq-cal" firstAttribute="top" secondItem="SUN-na-EPA" secondAttribute="bottom" constant="8" id="ttq-SJ-83O"/>
+                                            <constraint firstItem="iQE-hq-cal" firstAttribute="top" secondItem="SUN-na-EPA" secondAttribute="bottom" constant="10" id="ttq-SJ-83O"/>
                                         </constraints>
                                     </view>
                                 </subviews>
