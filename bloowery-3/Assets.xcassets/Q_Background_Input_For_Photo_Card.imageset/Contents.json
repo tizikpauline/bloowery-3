@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Inactive-1.png",
+      "filename" : "Q_Background_Input_For_Photo_Card-1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Inactive.png",
+      "filename" : "Q_Background_Input_For_Photo_Card.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Inactive-2.png",
+      "filename" : "Q_Background_Input_For_Photo_Card-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

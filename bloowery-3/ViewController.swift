@@ -186,7 +186,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
             card.taskName.text = String("\(tasks[indexPath.item].taskName)")
             card.taskInfo.text = String("\(tasks[indexPath.item].taskInfo)")
             
-            card.layer.cornerRadius = 10
+            card.layer.cornerRadius = 15
             card.layer.masksToBounds = true
             
             
@@ -198,7 +198,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
             cell.taskName2.text = String("\(duties[indexPath.item].taskName)")
             cell.taskInfo2.text = String("\(duties[indexPath.item].taskInfo)")
             
-            cell.layer.cornerRadius = 10
+            cell.layer.cornerRadius = 15
             cell.layer.masksToBounds = true
             
             return cell

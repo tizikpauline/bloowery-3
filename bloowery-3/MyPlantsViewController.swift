@@ -93,6 +93,18 @@ class MyPlantsViewController: UIViewController, UICollectionViewDelegateFlowLayo
         }
     }
     
+//        Transition to tracker
+    @IBAction func openTracker(_ sender: Any) {
+        transitionToTracker()
+    }
+    
+    func transitionToTracker() {
+        let trackerViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.trackerViewController) as? TrackerViewController
+        
+        view.window?.rootViewController = trackerViewController
+        view.window?.makeKeyAndVisible()
+    }
+    
 //    @objc func addDetails() {
 //
 //        let detailVC = MyViewController()

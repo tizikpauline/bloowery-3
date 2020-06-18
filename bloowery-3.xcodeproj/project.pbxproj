@@ -12,6 +12,9 @@
 		4352C4BF24714AA5002D97D0 /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4352C4BD24714AA5002D97D0 /* ProfileCollectionViewCell.xib */; };
 		43594033246DA5CE00E74DBC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43594032246DA5CE00E74DBC /* Constants.swift */; };
 		4374C2952456BB9400164AA1 /* NewPlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4374C2942456BB9400164AA1 /* NewPlantViewController.swift */; };
+		43865510249B4ED200BF6F2F /* TrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4386550F249B4ED200BF6F2F /* TrackerViewController.swift */; };
+		4386551D249B53C000BF6F2F /* ParameterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4386551B249B53C000BF6F2F /* ParameterCollectionViewCell.swift */; };
+		4386551E249B53C000BF6F2F /* ParameterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4386551C249B53C000BF6F2F /* ParameterCollectionViewCell.xib */; };
 		438A4816246C127300F357A4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A4815246C127300F357A4 /* SignUpViewController.swift */; };
 		438A4818246C129900F357A4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A4817246C129900F357A4 /* LoginViewController.swift */; };
 		438A481A246C12B000F357A4 /* AddInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A4819246C12B000F357A4 /* AddInfoViewController.swift */; };
@@ -42,6 +45,9 @@
 		4352C4BD24714AA5002D97D0 /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
 		43594032246DA5CE00E74DBC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4374C2942456BB9400164AA1 /* NewPlantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlantViewController.swift; sourceTree = "<group>"; };
+		4386550F249B4ED200BF6F2F /* TrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerViewController.swift; sourceTree = "<group>"; };
+		4386551B249B53C000BF6F2F /* ParameterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterCollectionViewCell.swift; sourceTree = "<group>"; };
+		4386551C249B53C000BF6F2F /* ParameterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParameterCollectionViewCell.xib; sourceTree = "<group>"; };
 		438A4815246C127300F357A4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		438A4817246C129900F357A4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		438A4819246C12B000F357A4 /* AddInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInfoViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +123,9 @@
 				43AC56CD2455D17300F8F4C4 /* MyPlantsViewController.swift */,
 				43AC56CF2455D1A500F8F4C4 /* DiagnosticViewController.swift */,
 				43AC56BD2455D08E00F8F4C4 /* Main.storyboard */,
+				4386551B249B53C000BF6F2F /* ParameterCollectionViewCell.swift */,
+				4386551C249B53C000BF6F2F /* ParameterCollectionViewCell.xib */,
+				4386550F249B4ED200BF6F2F /* TrackerViewController.swift */,
 				4352C4BC24714AA5002D97D0 /* ProfileCollectionViewCell.swift */,
 				4352C4BD24714AA5002D97D0 /* ProfileCollectionViewCell.xib */,
 				43594032246DA5CE00E74DBC /* Constants.swift */,
@@ -211,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4386551E249B53C000BF6F2F /* ParameterCollectionViewCell.xib in Resources */,
 				43AC56C42455D08F00F8F4C4 /* LaunchScreen.storyboard in Resources */,
 				43AC56D82455D24800F8F4C4 /* TaskCollectionViewCell2.xib in Resources */,
 				43AC56D42455D21600F8F4C4 /* TaskCollectionViewCell.xib in Resources */,
@@ -271,7 +281,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4386551D249B53C000BF6F2F /* ParameterCollectionViewCell.swift in Sources */,
 				438A4818246C129900F357A4 /* LoginViewController.swift in Sources */,
+				43865510249B4ED200BF6F2F /* TrackerViewController.swift in Sources */,
 				43594033246DA5CE00E74DBC /* Constants.swift in Sources */,
 				43AC56D72455D24800F8F4C4 /* TaskCollectionViewCell2.swift in Sources */,
 				43AC56BC2455D08E00F8F4C4 /* ViewController.swift in Sources */,
